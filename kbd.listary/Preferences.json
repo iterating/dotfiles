@@ -1,0 +1,495 @@
+{
+   "actions": {
+      "base": [ "{44eca225-98f6-489c-b97a-03163e83ce7e}", "{b7e56ba3-2042-4ff7-a499-62d861e2aa69}", "{6ee550e1-8ef3-4025-a673-88d96a48bbc8}", "{81927428-1534-44c4-88aa-f119f682339d}", "{284ecbe8-1ef2-49c9-bd93-f7025519402b}", "{35c0504f-b1a8-4c82-8e32-aa1e68520972}", "{4025f3ed-47e1-4212-9276-de3fbb0786e8}", "{6d2b6aa4-67e5-4dd6-b7ea-c4b30ae8c9a5}", "{edf97959-2c24-47ed-bd7b-3dc5e76b7752}", "{170e8be1-80fa-4afb-a6d7-7bcb1a1eba19}", "{112b153c-23ec-463a-bcae-9eeba93802d8}", "{7971bb91-830f-474b-a976-8bfc9fc001d1}", "{06457068-a652-4c0d-9c3c-a4056dde1f67}", "{e5d9da93-b1dd-4401-8ba1-25f10fca9f93}", "{f56585dd-3f13-4305-8f00-e5599e3f20fe}" ],
+      "items": [ {
+         "command_string": "_action_open_folder",
+         "enabled": true,
+         "guid": "{44eca225-98f6-489c-b97a-03163e83ce7e}",
+         "hotkey": 3330,
+         "keyword": "",
+         "type": "builtin"
+      }, {
+         "command_string": "_action_send_to",
+         "enabled": false,
+         "guid": "{b7e56ba3-2042-4ff7-a499-62d861e2aa69}",
+         "hotkey": 21249,
+         "keyword": "",
+         "type": "builtin"
+      }, {
+         "command_string": "_action_set_keyword",
+         "enabled": true,
+         "guid": "{6ee550e1-8ef3-4025-a673-88d96a48bbc8}",
+         "hotkey": 0,
+         "keyword": "",
+         "type": "builtin"
+      }, {
+         "command_string": "_action_copy",
+         "enabled": false,
+         "guid": "{81927428-1534-44c4-88aa-f119f682339d}",
+         "hotkey": 17154,
+         "keyword": "",
+         "type": "builtin"
+      }, {
+         "command_string": "_action_cut",
+         "enabled": false,
+         "guid": "{284ecbe8-1ef2-49c9-bd93-f7025519402b}",
+         "hotkey": 0,
+         "keyword": "",
+         "type": "builtin"
+      }, {
+         "command_string": "_action_copy_path",
+         "enabled": true,
+         "guid": "{35c0504f-b1a8-4c82-8e32-aa1e68520972}",
+         "hotkey": 17158,
+         "keyword": "",
+         "type": "builtin"
+      }, {
+         "command_string": "_action_copy_folder_path",
+         "enabled": false,
+         "guid": "{4025f3ed-47e1-4212-9276-de3fbb0786e8}",
+         "hotkey": 0,
+         "keyword": "",
+         "type": "builtin"
+      }, {
+         "command_string": "_action_open_with",
+         "enabled": false,
+         "guid": "{6d2b6aa4-67e5-4dd6-b7ea-c4b30ae8c9a5}",
+         "hotkey": 20225,
+         "keyword": "",
+         "type": "builtin"
+      }, {
+         "command_string": "_action_copy_to_current_folder",
+         "enabled": true,
+         "guid": "{edf97959-2c24-47ed-bd7b-3dc5e76b7752}",
+         "hotkey": 0,
+         "keyword": "",
+         "type": "builtin"
+      }, {
+         "command_string": "_action_move_to_current_folder",
+         "enabled": true,
+         "guid": "{170e8be1-80fa-4afb-a6d7-7bcb1a1eba19}",
+         "hotkey": 21766,
+         "keyword": "Pull to folder",
+         "type": "builtin"
+      }, {
+         "command_string": "_action_open",
+         "enabled": true,
+         "guid": "{112b153c-23ec-463a-bcae-9eeba93802d8}",
+         "hotkey": 0,
+         "keyword": "",
+         "type": "builtin"
+      }, {
+         "enabled": false,
+         "guid": "{7971bb91-830f-474b-a976-8bfc9fc001d1}",
+         "hotkey": 0,
+         "keyword": "",
+         "param": "\"{action_path}\"",
+         "path": "C:\\Program Files (x86)\\Notepad++\\notepad++.exe",
+         "run_as_admin": false,
+         "slient": false,
+         "title": "Edit with Notepad++",
+         "type": "custom"
+      }, {
+         "enabled": false,
+         "guid": "{06457068-a652-4c0d-9c3c-a4056dde1f67}",
+         "hotkey": 0,
+         "keyword": "",
+         "param": "\"{action_path}\"",
+         "path": "gvim.exe",
+         "run_as_admin": false,
+         "slient": false,
+         "title": "Edit with Vim",
+         "type": "custom"
+      }, {
+         "enabled": false,
+         "guid": "{e5d9da93-b1dd-4401-8ba1-25f10fca9f93}",
+         "hotkey": 0,
+         "keyword": "",
+         "param": "\"{action_path}\"",
+         "path": "atom.cmd",
+         "run_as_admin": false,
+         "slient": false,
+         "title": "Edit with Atom",
+         "type": "custom"
+      }, {
+         "enabled": false,
+         "guid": "{f56585dd-3f13-4305-8f00-e5599e3f20fe}",
+         "hotkey": 0,
+         "keyword": "",
+         "param": "/K \"cd /d \"{action_path}\" & \"C:\\Program Files (x86)\\Git\\bin\\sh.exe\" --login\"",
+         "path": "cmd.exe",
+         "run_as_admin": false,
+         "slient": false,
+         "title": "Git Bash",
+         "type": "custom"
+      } ]
+   },
+   "app_settings": {
+      "by_path": [  ],
+      "by_type": {
+
+      }
+   },
+   "appearance": {
+      "theme": {
+         "file": "Dark and Smooth.listarytheme.json"
+      }
+   },
+   "check_update": {
+      "last_check_local_version": "5.00.2843",
+      "last_check_time": "13247279587172562"
+   },
+   "general": {
+      "default_file_manager": {
+
+      },
+      "fuzzy_matching": true
+   },
+   "history": {
+
+   },
+   "hotkey": {
+      "main": 0
+   },
+   "keywords": {
+      "builtin_commands": [  ],
+      "custom_commands": [ {
+         "description": "Test an App: Launch Sandbox",
+         "display_title": "Test an App: Launch Sandbox",
+         "enabled": true,
+         "keyword": "test app",
+         "only_show_in_launcher": false,
+         "param": "",
+         "path": "%windir%\\system32\\WindowsSandbox.exe",
+         "run_as_admin": false,
+         "slient": false,
+         "working_dir": "%windir%\\system32\\"
+      } ],
+      "folder": [  ],
+      "web_search": [ {
+         "guid": "{ecb51462-cb27-4b89-ae53-333b4550f489}",
+         "keyword": "g:"
+      }, {
+         "guid": "{dd896809-2af4-405b-834f-45816615e3e3}",
+         "icon": {
+            "png_data": "iVBORw0KGgoAAAANSUhEUgAAACEAAAAiCAIAAABeEieWAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADK0lEQVRIid2WPUwaYRjHn/fu+FjwmLyh5nBoFQfARSb1GqCdGj+Cm6kmrZODg52MwYEBXLpo26FJm5SETlKwqZOQFHUpTNChxjoACSQ43UmH4zjuOhxVQD4Ov4b+p7v37rnf+3+e933eQ4JQgTsW1mtANR2QTnZ7CiF6eluMrorJbaQ3aqlRRJpURvXoQ2cEAJlnKyG3+qDeGMTEBkZPAoBUTInR1dtk1BdA6w4hHQkAYnJbZWG6MyrfXgqhucreUu1eb9TMhWqP9pZkLntThpSLK5Otpj8JQRfwLABgNEOMe0B1YbowMJrRzseU5Ei5uPDZJRdT0GNhkKo9yLNC0CmdpQEA6Y0a9w5GM8Cz5XcP5TIHAFr3DjY0fU0fNemN2vkYblkAAJlnhaCrmg40FUZJY0vhHs9Gy4mX31ugzCFyEOmNAACEHh+aBgApdwAA0u+v8nmOGFupjYi8VEjg1oWWjNa5qia3KtFXtVlYF4lxz8WurqYDYnRVSRFGM1r3jhByy1xW6w4hytYLIx0Qj7z16xK3LuKW5xjNAIBcTAlBZw1D2QjXa6zfBopd9Yx2JIxmiAmPUnBlFSAdqVs+7QDowlAkneyKyS2lDDUSZcPHVvBHU+KRF7cstktRIpEM70by+by6tQsg5eLiobeehMhB3YtkOwfhcGRtfd3pcIyMmK8weLb8cQyjbIiyYTSD9VvrvyJzWfHQW/0ZAABEmnTLp+3m5Hzy1Dw8/PbNNlw9P6SzlMxlqlwG/vU7RA5eIulJzbMPxMSGeOjFh6Y6+M7n806HQ7luZiitomGkEYlRNkSNYtRoh40NADMz05FIZGDgwYjZjKL7+8roJPMYAGQuK3MZuZiSeVbKxYFnlRZyVfq1CgAcxL/Xh1/ovFTy+f2JRLJQKDT7QKQJkSagmUYrWZnLSNk4lFmpmJK5bNeW3mcwbPp8yrWq81wBY41g9Wpm8H6NykglV+0UjcXsdnufwdCCcSs6L5V8/s0/pZLdbjebzXfC6DMYIuEvsWjs1/Hxj0SimdE5Az1hZmdnZgHgGv+J19Clj4uVfuu6Dx/3wVDb22+i/yVXfwF4PH0s1p926AAAAABJRU5ErkJggg",
+            "type": "png_data"
+         },
+         "keyword": "stack:",
+         "title": "Search StackOverflow for '{query}'",
+         "url": "https://stackoverflow.com/search?q={query}"
+      }, {
+         "guid": "{5ac62036-62aa-49d3-866b-d041bc7b1b76}",
+         "keyword": "gmail:"
+      }, {
+         "guid": "{4ed886fb-1df0-4fd0-abc1-810fc180e647}",
+         "keyword": "twitter:"
+      }, {
+         "guid": "{5014b42a-884d-40d3-835d-69079dd9fc51}",
+         "keyword": "youtube:"
+      }, {
+         "guid": "{95147e79-6274-4127-98bb-09d9ffa2a39a}",
+         "keyword": "where is"
+      }, {
+         "guid": "{c78295a6-2cf8-4569-bf42-33f1e5c030d7}",
+         "keyword": "wiki:"
+      }, {
+         "guid": "{2db0261a-1114-4c8d-8cc8-62a89aeb1a35}",
+         "keyword": "ebay:"
+      }, {
+         "guid": "{1744aa0c-751a-495f-aac5-6910e7406229}",
+         "keyword": "facebook:"
+      }, {
+         "enabled": true,
+         "icon": {
+            "png_data": "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",
+            "type": "png_data"
+         },
+         "keyword": "alternative to:",
+         "title": "Search alternativeto.net for '{query}'",
+         "url": "https://alternativeto.net/browse/search?q={query}"
+      }, {
+         "enabled": true,
+         "icon": {
+            "png_data": "iVBORw0KGgoAAAANSUhEUgAAACYAAAAkCAIAAABql9/yAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADFElEQVRYhbVXzU4UQRD+qmcWUFAQNyR7MEiCEt7AqDc5mJgYb76CF8NNn0F8AX0CozfjyURDNBouGo8EiAkk/KxKiMvuKrBsl4eeme3uqflZIn2Y7HZ9VV9VdXV1N+k390EKhNMaDLDG9yVsbaHTBUDcqvPeCo4aRaoEsPstBAMABkZpfIYX57H0Gn8OAIS8t8LvHmF3FWxAJmLtWCaAA0CDFKABBe469pOAAJCKNI2F6jTmntqJDHHUwO4qbf8uclwIoAyasYajhr1wIQAwR055Rj33kfE3n5F9tHJMexY5RfA/qiwskOcElFSSiMx2LpTtEgDCxCRfvo6hC/T1FVq/HGRiMSCu1TB1F80NWnuLlha8EShJiVFwbZZuPMDYFNY+RpTJSLjDEJOzdOsxNj9w/RO1m2BrRSRWBRA4JTE6lbMYnqCRGoKKkAajRAqVczRSw5kqgsEylaUABnSGlAACUfRTjBKIAWVLy1RskW+ivI/dmaYsqVwmjDQmNSPtS9E05xWhAyuasTZJTicj6i2V7x85syXaodQK0jpKgQKLxsIo5ewxeYsXUqaU+N4CDhpyNoKQzl8qX64xJcUOimkhqMmb6e4cSwlEPWliqoCyCKq3v+BwX8IRVEgjNbo4HU30UT7pppz0F2Z6+RBb36J5LxlDg3ztNt15Ibie12OzhL1TTEN3ZUruOi6zq57ZYxGXnH0S5XSck/adhJKB+CJzEluWx5kAZ1ibpJAvfUGJ1LJOBVMQPqVyxPl8HpGYfOHA8R3Kz0n/I0lDdgASpZc3lqrRgXDv63FLw3QfkkHHbbR/cmUYuuNXf++3RqfJrR383UX3MJPHp/QuIpFFpp1l/vwcQ2PUrDsAe18eH2N9md8/wf4GNduSTyKlWHLM+LFO9fWIQ/DJUDJtbmPzWVZM6eGu5Wm8v+RbQQ5fv06UwMflQ9nHeW7FF7EKyiEGRlG9yliNKc0FTDtasM+rIGqQbFqd9erz+BggQvUKBkbtcEIan8HcQoknrW01/UjLHuZJyzoBhrw4f9oPdzYP907HTPwD+y8hJnor+r0AAAAASUVORK5CYII",
+            "type": "png_data"
+         },
+         "keyword": "hn:",
+         "title": "Search Hacker News",
+         "url": "https://hn.algolia.com/?query={query}"
+      }, {
+         "enabled": true,
+         "icon": {
+
+         },
+         "keyword": "github:",
+         "title": "Search github",
+         "url": "https://github.com/search?q={query}"
+      } ]
+   },
+   "launch_apps": {
+      "search_folders": {
+
+      }
+   },
+   "menu_lists": {
+      "items": [ {
+         "id": 10,
+         "root_item": {
+            "items": [ {
+               "anchor": "submenu_favorite",
+               "items": [ {
+                  "anchor": "menu_list_tc_fav_menu",
+                  "id": 400,
+                  "type": "menu_list"
+               }, {
+                  "anchor": "menu_list_favorite_global",
+                  "id": 100,
+                  "type": "menu_list"
+               }, {
+                  "anchor": "menu_list_favorite_application",
+                  "id": 101,
+                  "type": "menu_list"
+               } ],
+               "type": "submenu"
+            }, {
+               "anchor": "submenu_recent",
+               "items": [ {
+                  "anchor": "menu_list_recent",
+                  "id": 200,
+                  "type": "menu_list"
+               } ],
+               "type": "submenu"
+            }, {
+               "anchor": "submenu_smart_commands",
+               "items": [ {
+                  "anchor": "menu_list_smart_commands",
+                  "id": 300,
+                  "type": "menu_list"
+               } ],
+               "type": "submenu"
+            } ],
+            "type": "submenu"
+         }
+      }, {
+         "id": 11,
+         "root_item": {
+            "items": [ {
+               "anchor": "menu_list_tc_fav_menu",
+               "id": 400,
+               "type": "menu_list"
+            }, {
+               "anchor": "menu_list_favorite_global",
+               "id": 100,
+               "type": "menu_list"
+            }, {
+               "anchor": "separator",
+               "type": "separator"
+            }, {
+               "anchor": "submenu_recent",
+               "items": [ {
+                  "anchor": "menu_list_recent",
+                  "id": 200,
+                  "type": "menu_list"
+               } ],
+               "type": "submenu"
+            }, {
+               "anchor": "separator",
+               "type": "separator"
+            }, {
+               "anchor": "command_OpenedFolders",
+               "command": "_OpenedFolders",
+               "type": "command"
+            }, {
+               "anchor": "submenu_smart_commands",
+               "items": [ {
+                  "anchor": "menu_list_smart_commands",
+                  "id": 300,
+                  "type": "menu_list"
+               } ],
+               "type": "submenu"
+            }, {
+               "anchor": "command_Options",
+               "command": "_Options",
+               "type": "command"
+            } ],
+            "type": "submenu"
+         }
+      }, {
+         "id": 100,
+         "root_item": {
+            "items": [  ],
+            "type": "submenu"
+         }
+      }, {
+         "id": 300,
+         "root_item": {
+            "items": [ {
+               "anchor": "command_QuickSwitch",
+               "command": "_QuickSwitch",
+               "type": "command"
+            }, {
+               "anchor": "command_OpenSelectedFile",
+               "command": "_OpenSelectedFile",
+               "type": "command"
+            }, {
+               "anchor": "command_OpenedFolders",
+               "command": "_OpenedFolders",
+               "type": "command"
+            }, {
+               "anchor": "separator",
+               "type": "separator"
+            }, {
+               "anchor": "command_Explore",
+               "command": "_Explore",
+               "type": "command"
+            }, {
+               "anchor": "command_Cmd",
+               "command": "_Cmd",
+               "type": "command"
+            }, {
+               "anchor": "command_CopyFolderPath",
+               "command": "_CopyFolderPath",
+               "type": "command"
+            }, {
+               "anchor": "command_CopyFilePaths",
+               "command": "_CopyFilePaths",
+               "type": "command"
+            }, {
+               "anchor": "command_GoToAppFolder",
+               "command": "_GoToAppFolder",
+               "type": "command"
+            }, {
+               "anchor": "command_ExploreAppFolder",
+               "command": "_ExploreAppFolder",
+               "type": "command"
+            }, {
+               "anchor": "command_ExportToExcel",
+               "command": "_ExportToExcel",
+               "type": "command"
+            }, {
+               "anchor": "separator",
+               "type": "separator"
+            }, {
+               "anchor": "command_ToggleFileExt",
+               "command": "_ToggleFileExt",
+               "type": "command"
+            }, {
+               "anchor": "command_ToggleHidden",
+               "command": "_ToggleHidden",
+               "type": "command"
+            }, {
+               "anchor": "separator",
+               "type": "separator"
+            }, {
+               "anchor": "command_DisableListary",
+               "command": "_DisableListary",
+               "type": "command"
+            }, {
+               "anchor": "separator",
+               "type": "separator"
+            }, {
+               "anchor": "command_Options",
+               "command": "_Options",
+               "type": "command"
+            } ],
+            "type": "submenu"
+         }
+      }, {
+         "id": 500,
+         "root_item": {
+            "items": [ {
+               "anchor": "menu_list_favorite_global",
+               "id": 100,
+               "type": "menu_list"
+            }, {
+               "anchor": "separator",
+               "type": "separator"
+            }, {
+               "anchor": "submenu_recent",
+               "items": [ {
+                  "anchor": "menu_list_recent",
+                  "id": 200,
+                  "type": "menu_list"
+               } ],
+               "type": "submenu"
+            }, {
+               "anchor": "separator",
+               "type": "separator"
+            }, {
+               "anchor": "command_Options",
+               "command": "_Options",
+               "type": "command"
+            } ],
+            "type": "submenu"
+         }
+      }, {
+         "id": 501,
+         "root_item": {
+            "items": [ {
+               "anchor": "command_Options",
+               "command": "_Options",
+               "type": "command"
+            }, {
+               "anchor": "separator",
+               "type": "separator"
+            }, {
+               "anchor": "command_Tutorial",
+               "command": "_Tutorial",
+               "type": "command"
+            }, {
+               "anchor": "command_OnlineHelp",
+               "command": "_OnlineHelp",
+               "type": "command"
+            }, {
+               "anchor": "command_CheckUpdates",
+               "command": "_CheckUpdates",
+               "type": "command"
+            }, {
+               "anchor": "command_About",
+               "command": "_About",
+               "type": "command"
+            }, {
+               "anchor": "separator",
+               "type": "separator"
+            }, {
+               "anchor": "command_Exit",
+               "command": "_Exit",
+               "type": "command"
+            } ],
+            "type": "submenu"
+         }
+      } ],
+      "version": 0
+   },
+   "pro_license": {
+      "email": "john.james.jones@hushmail.com",
+      "name": "John James Jones",
+      "regcode": "2RJSDKSSNGSXMYNWEEH7E4T6FUVCGPPBCDADQ5LMEABJF76Y369B5LTLVXVFWUN326KQ58M78J2NNS6WKPT9CG4MJXNXH4MJYBYXSARTBNPFNVBF6UFXQUVEWXQQGSUYHFF9AVV857AENGWWMPMRN5VLHB884JEAY48FXJJ5JDY6UVTP8FMJSHDLSAXZB5HE"
+   },
+   "projects": {
+
+   },
+   "search": {
+      "exclude": [ {
+         "type": "folder",
+         "value": "C:\\ProgramData\\Microsoft\\Windows\\Containers\\BaseImages\\fed2b941-bd3f-47b4-83d6-fab1f9ac27a0\\BaseLayer\\"
+      }, {
+         "type": "folder",
+         "value": "B:\\"
+      }, {
+         "type": "folder",
+         "value": "A:\\"
+      } ]
+   },
+   "status": {
+      "disk_search_started_successfully_last_time": true
+   },
+   "tip": {
+      "tutorial_listary5": false
+   },
+   "version": 2,
+   "window_types": {
+
+   }
+}

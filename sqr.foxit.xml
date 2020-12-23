@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><FoxitReader><CustomRibbon><tab name="Ribbon_Category_Home"><group name="Home_Panel_Zoom" tabname="Ribbon_Category_Home" label="" hidden="1"/>
+<group name="Home_Panel_Tools" tabname="Ribbon_Category_Home" insertbefore="Home_Panel_Zoom" hidden="1"/>
+</tab>
+<tab name="Ribbon_Category_Review"><group name="Review_Panel_Tools" tabname="Ribbon_Category_Review" insertbefore="COMMNET_Panel_TextMarkup" hidden="1"/>
+<group name="COMMENT_Panel_MEATURE" tabname="Ribbon_Category_Review" insertbefore="REVIEW_Panel_Stamps" hidden="1"/>
+</tab>
+<tab name="Ribbon_Category_FillSign"><group name="Review_Panel_Tools" tabname="Ribbon_Category_FillSign" insertbefore="Sign_Panel_Fill" hidden="1"/>
+<group name="Ribbon_Panel_ParaSignature" tabname="Ribbon_Category_FillSign" label="" hidden="1"/>
+</tab>
+<tab name="Ribbon_Category_View"><group name="Review_Panel_Tools" tabname="Ribbon_Category_View" insertbefore="View_Panel_Goto" hidden="1"/>
+<group name="View_Panel_PageDisplay" tabname="Ribbon_Category_View" label="" hidden="1"/>
+<group name="View_Panel_ViewSetting" tabname="Ribbon_Category_View" label="" hidden="1"/>
+<group name="Review_Panel_Compare" tabname="Ribbon_Category_View" label="" hidden="1"/>
+</tab>
+<tab name="Ribbon_Category_Form" label="a"><group name="Review_Panel_Tools" tabname="Ribbon_Category_Form" label="" hidden="1"/>
+<group name="Form_Panel_FormData" tabname="Ribbon_Category_Form" label="" hidden="1"/>
+</tab>
+<tab name="Ribbon_Category_Protect" label="b"><group name="Review_Panel_Tools" tabname="Ribbon_Category_Protect" label="" hidden="1"/>
+<group name="Protect_Panel_Signature" tabname="Ribbon_Category_Protect" label="" hidden="1"/>
+</tab>
+<tab name="Ribbon_Category_Share" label="c"><group name="Review_Panel_Tools" tabname="Ribbon_Category_Share" label="" hidden="1"/>
+<group name="Share_Panel_Sendto" tabname="Ribbon_Category_Share" hidden="1"/>
+<group name="Share_Panel_Review" tabname="Ribbon_Category_Share" label="" hidden="1"/>
+<group name="SPServer Panel" tabname="Ribbon_Category_Share" label="" hidden="1"/>
+</tab>
+<tab name="Ribbon_Category_Help" label="d"><group name="Help_Panel_Help" tabname="Ribbon_Category_Help" label="" hidden="1"/>
+<group name="Help_Panel_Product" tabname="Ribbon_Category_Help" label="" hidden="1"/>
+<group name="Help_Panel_Registration" tabname="Ribbon_Category_Help" label="" hidden="1"/>
+</tab>
+<tab name="Ribbon_Category_CommentFormat"><group name="FORMAT_Panel_SETTING" tabname="Ribbon_Category_CommentFormat" hidden="1"/>
+</tab>
+</CustomRibbon>
+</FoxitReader>

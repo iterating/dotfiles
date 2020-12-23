@@ -1,0 +1,100 @@
+
+/* Everything is transparent. */
+
+#titlebar, #window, #main-window, #toolbar-menubar, #TabsToolbar, #PersonalToolbar, #navigator-toolbox{
+background-color: rgba(0,0,0,0.7) !important;
+}
+
+
+#urlbar-container{
+  margin-bottom:-1px !important; 
+  max-width:40vw !important;
+  min-width:20vw !important;
+}
+
+/*** Reduce width of identity area ***/
+/* Hide the site owner, extension name */
+#tracking-protection-icon-container, 
+#identity-box {
+  visibility: collapse !important;
+}
+
+/*** Narrow the spacing between toolbar buttons ***/
+#nav-bar.toolbarbutton-icon {
+  width: 20px !important;
+  padding-left: 1px !important;
+  padding-right: 1px !important;
+}
+/*#PanelUI-button {
+  margin-left: 0 !important;
+  border-left: none !important;
+}
+#PanelUI-menu-button, .toolbarbutton-badge-stack {
+  padding-left: 0 !important;
+  padding-right: 1px !important;
+}*/
+
+.tabbrowser-tab{
+filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.3)) !important;
+background-color: var(--main-bg-color) !important;
+font-weight: 400;
+opacity: 0.7;
+/* border: 1px #333 solid !important; */
+}
+
+tab.tabbrowser-tab[visuallyselected], tab[visuallyselected]>.tab-stack>.tab-background{
+filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.3)) !important;
+background-color: var(--toolbar-bgcolor) !important;
+opacity: 0.7;
+font-weight: 600;
+}
+
+
+/*context searc*h/oop of context menu*/
+#context-searchselect {
+    -moz-box-ordinal-group: 0 !important;
+} 
+
+/*hide context menu buttons*/
+#context-inspect, #context-viewsource,
+#context-viewpartialsource-selection, 
+#context-viewinfo, 
+#context-bookmarklink,
+#context-selectall,
+#context-savepage,
+#screenshots_mozilla_org-menuitem-_create-screenshot,
+#context-setDesktopBackground  {
+  display: none !important; 
+}
+
+/* not hidden
+/* #context-savepage,
+#context-savepage,
+
+
+/*hide nav buttons*/
+#forward-button, #reload-button, #stop-button, 
+#nav-bar-overflow-button {
+ display: none !important;
+} 
+
+/*#page-action-buttons*/
+
+#sidebar-box, #sidebar {
+background-color: transparent !important;
+filter: drop-shadow(1px 1px 1px rgba(0,0,0,0.3)) !important;
+}
+
+/* Combine Navigation bar with tab bar to maximize viewing space */
+#TabsToolbar,#nav-bar{ height: 27px !important; }
+#TabsToolbar {  
+  margin-left: 40vw !important; 
+/*  margin-right: 2vw !important;  */
+  margin-top:-3px !important;
+}
+#nav-bar { 
+  margin-top:-27px !important; 
+  margin-right: 60vw !important;
+  background-color: transparent !important;
+  background-image: none !important;
+}
