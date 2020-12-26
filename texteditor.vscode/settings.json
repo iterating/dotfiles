@@ -784,7 +784,7 @@
 	"workbench.preferredLightColorTheme": "GitHub Light",
 	"zenMode.fullScreen": false,
 	"window.autoDetectHighContrast": false,
-	"window.zoomLevel": -1,
+	"window.zoomLevel": -2,
 	"workbench.activityBar.visible": true,
 	"explorer.openEditors.visible": 0,
 	"telemetry.enableTelemetry": false,
@@ -798,7 +798,6 @@
 	"editor.mouseWheelZoom": true,
 	"editor.smoothScrolling": true,
 	"diffEditor.renderIndicators": false,
-	"editor.minimap.side": "left",
 	"workbench.tree.renderIndentGuides": "always",
 	"workbench.editor.revealIfOpen": true,
 	"window.menuBarVisibility": "default",
@@ -997,4 +996,5 @@
 },
 "git.enableSmartCommit": true,
 "git.autofetch": true,
+"editor.wordWrapColumn": 72,
 }
