@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<obprofiles xmlns="http://www.logitech.com/Cassandra/2013.1/OnboardProfile">
+  <profile name="">
+    <device anglesnapping="0" powermode="1" model="Logitech.Gaming.Mouse.G602" buttoncount="11" reportrate="125">
+      <dpitable shift="1250" defaultindex="0">
+        <dpi x="1250" y="1250"/>
+        <dpi x="0" y="0"/>
+        <dpi x="0" y="0"/>
+        <dpi x="0" y="0"/>
+        <dpi x="0" y="0"/>
+      </dpitable>
+    </device>
+    <buttons>
+      <button number="1" name="Left Click">
+        <mousefunction xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/MouseFunction">
+          <do task="leftclick"/>
+        </mousefunction>
+      </button>
+      <button number="2" name="Right Click">
+        <mousefunction xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/MouseFunction">
+          <do task="rightclick"/>
+        </mousefunction>
+      </button>
+      <button number="3" name="Middle Click">
+        <mousefunction xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/MouseFunction">
+          <do task="middleclick"/>
+        </mousefunction>
+      </button>
+      <button number="4" name="Right Ctrl + V">
+        <keystroke xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/Keystroke">
+          <key value="V"/>
+          <modifier value="RCTRL"/>
+        </keystroke>
+      </button>
+      <button number="5" name="Right Ctrl + Shift + Tab">
+        <keystroke xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/Keystroke">
+          <key value="TAB"/>
+          <modifier value="RCTRL"/>
+          <modifier value="LSHIFT"/>
+        </keystroke>
+      </button>
+      <button number="6" name="Right Alt + Shift + Tab">
+        <keystroke xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/Keystroke">
+          <key value="TAB"/>
+          <modifier value="RALT"/>
+          <modifier value="LSHIFT"/>
+        </keystroke>
+      </button>
+      <button number="7" name="Right Ctrl + C">
+        <keystroke xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/Keystroke">
+          <key value="C"/>
+          <modifier value="RCTRL"/>
+        </keystroke>
+      </button>
+      <button number="8" name="Right Ctrl + Tab">
+        <keystroke xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/Keystroke">
+          <key value="TAB"/>
+          <modifier value="RCTRL"/>
+        </keystroke>
+      </button>
+      <button number="9" name="Right Alt + Tab">
+        <keystroke xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/Keystroke">
+          <key value="TAB"/>
+          <modifier value="RALT"/>
+        </keystroke>
+      </button>
+      <button number="10" name="Back">
+        <mousefunction xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/MouseFunction">
+          <do task="back"/>
+        </mousefunction>
+      </button>
+      <button number="11" name="Right Ctrl + W">
+        <keystroke xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/Keystroke">
+          <key value="W"/>
+          <modifier value="RCTRL"/>
+        </keystroke>
+      </button>
+    </buttons>
+  </profile>
+</obprofiles>

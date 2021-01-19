@@ -1,0 +1,15 @@
+mklink C:\Users\jy\AppData\Roaming\copyq\copyq.ini C:\Users\jy\dotfiles\kbd\copyq.ini
+
+mklink C:\Users\jy\AppData\Roaming\Sizer4\sizer.xml C:\Users\jy\dotfiles\kbd\sizer.xml
+
+mklink C:\Users\jy\AppData\Roaming\Listary\UserData\Preferences.json C:\Users\jy\dotfiles\kbd.listary\Preferences.json
+
+mklink "C:\Users\jy\AppData\Roaming\XMind\Electron v3\vana\state\keybindings.json" "C:\Users\jy\dotfiles\mindmapper.xmind\keybindings.json"
+
+mklink C:\Users\jy\AppData\Roaming\Typora\conf\conf.user.json C:\Users\jy\dotfiles\texteditor.markdown.typora\conf.user.json
+
+mklink "C:\Users\jy\AppData\Roaming\Sublime Text 3\Packages\User\\Default (Windows).sublime-keymap" "C:\Users\jy\dotfiles\texteditor.sublime\Default (Windows).sublime-keymap"
+
+mklink "C:\Users\jy\AppData\Roaming\Sublime Text 3\Packages\User\Preferences.sublime-settings" "C:\Users\jy\dotfiles\texteditor.sublime\Preferences.sublime-settings"
+
+mklink C:\Users\jy\AppData\Roaming\Anki2\addons21 D:\Dropbox\tech\anki\addons21

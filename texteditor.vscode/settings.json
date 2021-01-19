@@ -778,12 +778,13 @@
 		}
 	],
 	"editor.foldingHighlight": false,
-	"sync.gist": "eb36207a95069cbd74e864e46d640055",
+	"sync.gist": "70f4793b6dd66711b005b2ebac2825db",
 	"anki.md.card.separator": "(?=Ɂ)",
 	"anki.md.card.tagPattern": "\\[#(.*)\\]",
 	"workbench.preferredLightColorTheme": "GitHub Light",
 	"zenMode.fullScreen": false,
 	"window.autoDetectHighContrast": false,
+	"window.zoomLevel": -1,
 	"workbench.activityBar.visible": true,
 	"explorer.openEditors.visible": 0,
 	"telemetry.enableTelemetry": false,
@@ -797,6 +798,7 @@
 	"editor.mouseWheelZoom": true,
 	"editor.smoothScrolling": true,
 	"diffEditor.renderIndicators": false,
+	"editor.minimap.side": "left",
 	"workbench.tree.renderIndentGuides": "always",
 	"workbench.editor.revealIfOpen": true,
 	"window.menuBarVisibility": "default",
@@ -857,7 +859,7 @@
 	"customizeUI.titleBar": "inline",
 	"customizeUI.activityBarHideSettings": true,
 	"editor.foldingStrategy": "indentation",
-	"sync.removeExtensions": true,
+	"sync.removeExtensions": false,
 	"scm.diffDecorationsGutterWidth": 1,
 	"gutterpreview.showImagePreviewOnGutter": false,
 	"editor.glyphMargin": false,
@@ -942,7 +944,7 @@
 	"monospace": "18px",
 	"tab-title": "14px",
 	"12px": "18px"
-	},
+},
 
 "customizeUI.stylesheet": {
 
@@ -966,34 +968,6 @@
 "markdownShortcuts.icons.italic": false,
 "markdownShortcuts.icons.bullets": false,
 "editor.minimap.enabled": true,
-"markdown-header-coloring.userDefinedHeaderColor": {
-	"enabled": true,
-	"Header_1": {
-		"color": " #66ff99",
-		"backgroundColor": "",
-	},
-	"Header_2": {
-		"color": "#66ffcc",
-		"backgroundColor": "",
-	},
-	"Header_3": {
-		"color": "#00ffff",
-		"backgroundColor": "",
-	},
-	"Header_4": {
-		"color": "#00ccff",
-		"backgroundColor": "",
-	},
-	"Header_5": {
-		"color": "#0066cc",
-		"backgroundColor": "",
-	},
-	"Header_6": {
-		"color": "#003399",
-		"backgroundColor": "",
-	}
-},
 "git.enableSmartCommit": true,
-"git.autofetch": true,
-"editor.wordWrapColumn": 72,
+
 }

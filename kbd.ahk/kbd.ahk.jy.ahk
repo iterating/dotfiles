@@ -5,7 +5,7 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 DetectHiddenWindows, On
 SetTitleMatchMode, 2 ; Title can be part of the full title
 
-;======== GLOBAL (syn: OS LEVEL) SHORTCUTS====================
+;=== GLOBAL OS LEVEL SHORTCUTS ===
 	F13::Send #1 ; sharpkeys quicklaunch
 
 	; One chord characters [
@@ -172,7 +172,7 @@ SetTitleMatchMode, 2 ; Title can be part of the full title
 	; [Open Keybinds]:
 		; #ASF QR ZXCV F1234 Shift F13 Esc 
 		; #JKL N/ UIO HBY F9 10 11 12 Bksp [] \ Enter PgU PgD ` End Ins Del
-;========== APP LEVEL SHORTCUTS ============
+;=== APP LEVEL SHORTCUTS ===
 	; Windows Fileexplorer [
 		::;flat::
 		Send System.Kind:<>folder
@@ -306,9 +306,5 @@ SetTitleMatchMode, 2 ; Title can be part of the full title
 				F2:: Send, ^+r
 
 		#If    ; turn off context sensitivity
-
-
-
-
 ; [Notes] can map: +# and #+
 ; can map f6 f7 f8 f9 f10 f12
