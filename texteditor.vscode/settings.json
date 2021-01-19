@@ -969,5 +969,6 @@
 "markdownShortcuts.icons.bullets": false,
 "editor.minimap.enabled": true,
 "git.enableSmartCommit": true,
+"git.autofetch": true,
 
 }
