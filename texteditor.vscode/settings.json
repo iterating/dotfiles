@@ -784,7 +784,7 @@
 	"workbench.preferredLightColorTheme": "GitHub Light",
 	"zenMode.fullScreen": false,
 	"window.autoDetectHighContrast": false,
-	"window.zoomLevel": -1,
+	"window.zoomLevel": 0,
 	"workbench.activityBar.visible": true,
 	"explorer.openEditors.visible": 0,
 	"telemetry.enableTelemetry": false,
@@ -796,9 +796,7 @@
 	"MarkdownPaste.silence": true,
 	"explorer.confirmDelete": false,
 	"editor.mouseWheelZoom": true,
-	"editor.smoothScrolling": true,
 	"diffEditor.renderIndicators": false,
-	"editor.minimap.side": "left",
 	"workbench.tree.renderIndentGuides": "always",
 	"workbench.editor.revealIfOpen": true,
 	"window.menuBarVisibility": "default",
@@ -937,16 +935,17 @@
 "extensions.closeExtensionDetailsOnViewChange": true,
 "editor.lineHeight": 32,
 "workbench.sideBar.location": "left",
-"pasteImage.defaultName": "${currentFileNameWithoutExt}-mm",
+"pasteImage.defaultName": "${currentFileNameWithoutExt}-ms",
 "pasteImage.prefix": "./",
 "customizeUI.fontSizeMap": {
-	"13px": "18px",
-	"monospace": "18px",
-	"tab-title": "14px",
+	"13px": "16px",
+	"monospace": "16px",
+	"tab-title": "11px",
 	"12px": "18px"
 },
 
 "customizeUI.stylesheet": {
+
 
 	".monaco-workbench .part.editor>.content .editor-group-container>.title .tabs-container": "height: 20px !important;",
 
@@ -970,5 +969,56 @@
 "editor.minimap.enabled": true,
 "git.enableSmartCommit": true,
 "git.autofetch": true,
+"markdown-header-coloring.textDecoration": "",
+"markdown-header-coloring.backgroundColorOpacity": 0,
+"markdown-header-coloring.colormapConfig": {
+
+
+	"colormap": "hsv",
+	"nshades": 20
+},
+"markdown-header-coloring.userDefinedHeaderColor": {
+
+	"enabled": true,
+	"Header_1": {
+		"color": "#EF919B",
+		"backgroundColor": "",
+		"textDecoration": "",
+		"overviewRulerColor": ""
+	},
+	"Header_2": {
+		"color": "#F8B392",
+		"backgroundColor": "",
+		"textDecoration": "",
+		"overviewRulerColor": ""
+	},
+	"Header_3": {
+		"color": "#A0CFA2",
+		"backgroundColor": "",
+		"textDecoration": "",
+		"overviewRulerColor": ""
+	},
+	"Header_4": {
+		"color": "#31B5BD",
+		"backgroundColor": "",
+		"textDecoration": "",
+		"overviewRulerColor": ""
+	},
+	"Header_5": {
+		"color": "#71BEE7",
+		"backgroundColor": "",
+		"textDecoration": "",
+		"overviewRulerColor": ""
+	},
+	"Header_6": {
+		"color": "#8380B3",
+		"backgroundColor": "",
+		"textDecoration": "",
+		"overviewRulerColor": ""
+	}
+},
+"workbench.colorTheme": "GitHub Light",
+"editor.wordWrapColumn": 72,
+"dendron.defaultScratchDateFormat": "y.MM.dd.HHmm",
 
 }

@@ -42,11 +42,14 @@ SetTitleMatchMode, 2 ; Title can be part of the full title
 
 	; Common symbols [
 		::;star::
-		Send {U+2730} ;✰
-		return
+			Send {U+2730} ;✰
+			return
 		::;org:: ;organize
 			Send {U+229E} ;⊞
-		return
+			return
+		::;well:: ;wellness
+			Send {U+06DE} ;۞
+			return
 	; ]
 
 	; Logic symbols [

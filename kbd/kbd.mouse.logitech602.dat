@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <obprofiles xmlns="http://www.logitech.com/Cassandra/2013.1/OnboardProfile">
   <profile name="">
-    <device anglesnapping="0" powermode="1" model="Logitech.Gaming.Mouse.G602" buttoncount="11" reportrate="125">
-      <dpitable shift="1250" defaultindex="0">
+    <device model="Logitech.Gaming.Mouse.G602" buttoncount="11" powermode="1" reportrate="125" anglesnapping="0">
+      <dpitable defaultindex="0" shift="1250">
         <dpi x="1250" y="1250"/>
         <dpi x="0" y="0"/>
         <dpi x="0" y="0"/>
