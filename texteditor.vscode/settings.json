@@ -784,7 +784,6 @@
 	"workbench.preferredLightColorTheme": "GitHub Light",
 	"zenMode.fullScreen": false,
 	"window.autoDetectHighContrast": false,
-	"window.zoomLevel": 0,
 	"workbench.activityBar.visible": true,
 	"explorer.openEditors.visible": 0,
 	"telemetry.enableTelemetry": false,

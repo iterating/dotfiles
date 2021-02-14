@@ -8,6 +8,22 @@ SetTitleMatchMode, 2 ; Title can be part of the full title
 ;=== GLOBAL OS LEVEL SHORTCUTS ===
 	F13::Send #1 ; sharpkeys quicklaunch
 
+	; Common symbols [
+		::;star::
+			Send {U+2730} ;✰
+			return
+		::;org::
+			Send {U+229E} ;⊞
+			return
+		::;well::
+			Send {U+06DE} ;۞
+			return
+		::;comm::
+			Send {U+260F} ;☏
+			return
+		::;j::John Young
+	; ]
+
 	; One chord characters [
 		$+#/::Send {U+241}	;	Question mark Ɂ
 		$+#up::Send {U+2191}	;	↑
@@ -18,6 +34,60 @@ SetTitleMatchMode, 2 ; Title can be part of the full title
 		$+#;::Send {U+FF1A}	; full width colon "："
 		$+#'::Send {U+2033}	;	Quote ″
 	; ]
+
+	; Logic symbols [
+		$+#\::Send {U+00AC}	;	¬ ;not
+		$+#=::Send {U+2227}	; ∧
+		$+!right::Send {U+21D2}	;	⇒ ;+#! does an msoffice shortcut
+		$+!left::Send {U+21D0}	;	⇐
+		$+!=::Send {U+21D4}	;	⇔
+
+		::;then::
+		Send {U+2937} ; ⤷
+		return
+		::;bc::
+		Send {U+2235}	; ∵
+		return
+		::;t4::
+		Send {U+2234}	; ∴
+		return
+		::;tr::
+		Send {U+22A8}	; ⊨:True
+		return
+		::;¬tr::
+		Send {U+22AD}	; ⊭:Not true
+		return
+		::;pr::
+		Send {U+22A2} 	; ⊢:Proves
+		return
+		::;\pr::
+		Send {U+22AC}	; ⊬:Does not prove
+		return
+		::;models::
+		Send {U+22A7}	; ⊧:Models
+		Return
+		::;union::
+		Send {U+222A} ;∪:Union
+		Return
+		::;intersection::
+		Send {U+2229}  ;∩:Intersection
+		Return
+	; ]
+
+	;Sort anchors [	
+		::;top anchor::
+			Send {U+2E17}	; 	Top anchor "⸗".
+			return
+		
+		 ::;bottom anchor::
+		 	Send {U+03B9}	; 	Bottom anchor "ι".
+			return
+	; ]
+		Flashtext:  
+			SplashTextOn , 200, 0, Autohotkey replaced,
+			sleep,500
+			SplashTextOff
+		return
 
 	; PARA folders [
 		:*:;today::
@@ -39,67 +109,6 @@ SetTitleMatchMode, 2 ; Title can be part of the full title
 			Send {U+03B9}{U+2754}
 			return
 	; ]
-
-	; Common symbols [
-		::;star::
-			Send {U+2730} ;✰
-			return
-		::;org:: ;organize
-			Send {U+229E} ;⊞
-			return
-		::;well:: ;wellness
-			Send {U+06DE} ;۞
-			return
-	; ]
-
-	; Logic symbols [
-		$+#\::Send {U+00AC}	;	¬
-		$+#=::Send {U+2227}	; ∧
-		$+!right::Send {U+21D2}	;	⇒ ;+#! does an msoffice shortcut
-		$+!left::Send {U+21D0}	;	⇐
-		$+!=::Send {U+21D4}	;	⇔
-
-		::;then::
-		Send {U+2937} ; ⤷
-		return
-		::;bc::
-		Send {U+2235}	; ∵
-		return
-		::;t4::
-		Send {U+2234}	; ∴
-		return
-		::;tr::
-		Send {U+22A8}	; ⊨
-		return
-		::xtr:: ; not true
-		Send {U+22AD} ; ⊭
-		return
-		::;pr::
-		Send {U+22A2} ; ⊢
-		return
-		::;\pr::
-		Send {U+22AC}	; ⊬
-		return
-		::;models::
-		Send {U+22A7} ;⊧
-		Return
-
-	; ]
-
-	;Sort anchors [	
-		::;top anchor::
-			Send {U+2E17}	; 	Top anchor "⸗".
-			return
-		
-		 ::;bottom anchor::
-		 	Send {U+03B9}	; 	Bottom anchor "ι".
-			return
-	; ]
-		Flashtext:  
-			SplashTextOn , 200, 0, Autohotkey replaced,
-			sleep,500
-			SplashTextOff
-		return
 
 	; -[ ] learn to make leader key in AHK
 	; -[ ] set a leader key for special characters
@@ -159,9 +168,6 @@ SetTitleMatchMode, 2 ; Title can be part of the full title
 		return
 		#^!+P::
 		Send #^+P
-		return
-		#^!+D::
-		Send #^+D
 		return
 		#^!+L::
 		Send #^+L
