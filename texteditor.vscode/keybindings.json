@@ -34,6 +34,16 @@
         "when": "editorTextFocus && !editorReadonly"
     },
     {
+        "key": "shift+alt+up",
+        "command": "editor.action.moveLinesUpAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "alt+up",
+        "command": "-editor.action.moveLinesUpAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
         "key": "ctrl+shift+alt+up",
         "command": "notebook.cell.copyUp",
         "when": "notebookEditorFocused && !inputFocus"
@@ -751,15 +761,5 @@
     {
         "key": "ctrl+alt+-",
         "command": "imagePreview.zoomOut"
-    },
-    {
-        "key": "shift+alt+up",
-        "command": "editor.action.moveLinesUpAction",
-        "when": "editorTextFocus && !editorReadonly"
-    },
-    {
-        "key": "alt+up",
-        "command": "-editor.action.moveLinesUpAction",
-        "when": "editorTextFocus && !editorReadonly"
     }
 ]

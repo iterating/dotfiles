@@ -6,9 +6,16 @@ DetectHiddenWindows, On
 SetTitleMatchMode, 2 ; Title can be part of the full title
 
 ;=== GLOBAL OS LEVEL SHORTCUTS ===
-	F13::Send #1 ; sharpkeys quicklaunch
+	F18::Send #4 
+	::;ttt::
+		Send, %A_Hour%:%A_Min%
+		Return
+	;F19::
+	;F20:: 
+	F13::Send #1 ; sharpkeys::quicklaunch
+	#+:: Send #2
 
-	; Common symbols [
+	; Common symbols
 		::;star::
 			Send {U+2730} ;✰
 			return
@@ -22,28 +29,28 @@ SetTitleMatchMode, 2 ; Title can be part of the full title
 			Send {U+260F} ;☏
 			return
 		::;j::John Young
-	; ]
+	;
 
-	; One chord characters [
+	; One chord characters
 		$+#/::Send {U+241}	;	Question mark Ɂ
 		$+#up::Send {U+2191}	;	↑
 		$+#right::Send {U+2192}	;	→
 		$+#down::Send {U+2193}	;	↓
 		$+#left::Send {U+2190}	;	←
 
-		$+#;::Send {U+FF1A}	; full width colon "："
+		$+#;::Send {U+FF1A}	;	full width colon "："
 		$+#'::Send {U+2033}	;	Quote ″
-	; ]
+	;
 
-	; Logic symbols [
+	; Logic symbols
 		$+#\::Send {U+00AC}	;	¬ ;not
-		$+#=::Send {U+2227}	; ∧
+		$+#=::Send {U+2227}	; 	∧
 		$+!right::Send {U+21D2}	;	⇒ ;+#! does an msoffice shortcut
 		$+!left::Send {U+21D0}	;	⇐
 		$+!=::Send {U+21D4}	;	⇔
 
 		::;then::
-		Send {U+2937} ; ⤷
+		Send {U+2937}	; ⤷
 		return
 		::;bc::
 		Send {U+2235}	; ∵
@@ -54,42 +61,44 @@ SetTitleMatchMode, 2 ; Title can be part of the full title
 		::;tr::
 		Send {U+22A8}	; ⊨:True
 		return
-		::;¬tr::
+		::;ntr::
 		Send {U+22AD}	; ⊭:Not true
 		return
 		::;pr::
 		Send {U+22A2} 	; ⊢:Proves
 		return
-		::;\pr::
+		::;npr::
 		Send {U+22AC}	; ⊬:Does not prove
 		return
 		::;models::
 		Send {U+22A7}	; ⊧:Models
 		Return
 		::;union::
-		Send {U+222A} ;∪:Union
+		Send {U+222A} 	;∪:Union
 		Return
 		::;intersection::
 		Send {U+2229}  ;∩:Intersection
+		::;prop::
+		Send {U+221D}	;∝:proportional to
 		Return
-	; ]
+	;
 
-	;Sort anchors [	
+	;Sort anchors
 		::;top anchor::
-			Send {U+2E17}	; 	Top anchor "⸗".
+			Send {U+2E17}	; Top anchor "⸗".
 			return
 		
 		 ::;bottom anchor::
-		 	Send {U+03B9}	; 	Bottom anchor "ι".
+		 	Send {U+03B9}	; Bottom anchor "ι".
 			return
-	; ]
+	;
 		Flashtext:  
 			SplashTextOn , 200, 0, Autohotkey replaced,
 			sleep,500
 			SplashTextOff
 		return
 
-	; PARA folders [
+	; PARA folders
 		:*:;today::
 			Send -{U+2648} 
 			return
@@ -108,7 +117,7 @@ SetTitleMatchMode, 2 ; Title can be part of the full title
 		:*:;reference::
 			Send {U+03B9}{U+2754}
 			return
-	; ]
+	;
 
 	; -[ ] learn to make leader key in AHK
 	; -[ ] set a leader key for special characters
