@@ -761,5 +761,9 @@
     {
         "key": "ctrl+alt+-",
         "command": "imagePreview.zoomOut"
+    },
+    {
+        "key": "ctrl+e",
+        "command": "easy-highlight.Highlight"
     }
 ]

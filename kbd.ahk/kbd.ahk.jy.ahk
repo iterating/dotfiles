@@ -28,7 +28,7 @@ SetTitleMatchMode, 2 ; Title can be part of the full title
 		::;comm::
 			Send {U+260F} ;☏
 			return
-		::;j::John Young
+		::;jy::John Young
 	;
 
 	; One chord characters

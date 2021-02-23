@@ -13,39 +13,37 @@
 	// 	"description": "Log output to console"
 	// }
 
-// Make a keyboard symbol
+// Make a keyboard symbol in the selected
 	"kbd": {
 		"prefix" : ["kbd"],
 		"body": ["<kbd>$1</kbd> $0"],
 		"description": "type a Keyboard button"
 	},
 
-	
 
-// Make a folding toggle
+// Fold a selection and name it
 	"fold.selected": {
 		"prefix" : ["fold.selected"],
 		"body":
 			["<details><summary>$1",
-			"</summary>",
-			"${TM_SELECTED_TEXT}",
-			"</details>",
+			"  </summary>",
+			"  ${TM_SELECTED_TEXT}",
+			"  </details>",
 			"$0"],
 		"description": "Creates a toggle fold on the selection"
 	},
 
+	// Fold a new section
 	"fold.new": {
 		"prefix" : ["fold.new"],
 		"body":
 			["<details><summary>$1",
-			"</summary>",
-			"$2",
-			"</details>",
-			"$0"],
+			"  </summary>",
+			"  $2",
+			"  </details>",
+			"  $0"],
 		"description": "Creates a new toggle fold"
 	},
-
-
 
 // Make a page break
 	"pagebreak": {
@@ -54,7 +52,7 @@
 		"description": "Creates a Page Break"
 	},
 
-	// Insert a iframe
+	// Insert a iframe in selection
 
 	"iframe": {
 			"prefix" : ["IFrame"],

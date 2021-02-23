@@ -784,7 +784,7 @@
 	"workbench.preferredLightColorTheme": "GitHub Light",
 	"zenMode.fullScreen": false,
 	"window.autoDetectHighContrast": false,
-	"window.zoomLevel": -1,
+	"window.zoomLevel": -2,
 	"workbench.activityBar.visible": true,
 	"explorer.openEditors.visible": 0,
 	"telemetry.enableTelemetry": false,
@@ -1020,5 +1020,13 @@
 "workbench.colorTheme": "GitHub Light",
 "editor.wordWrapColumn": 72,
 "dendron.defaultScratchDateFormat": "y.MM.dd.HHmm",
+"todo-tree.general.tags": [
+	"BUG",
+	"HACK",
+	"FIXME",
+	"TODO",
+	"XXX",
+	"hi"
+],
 
 }
