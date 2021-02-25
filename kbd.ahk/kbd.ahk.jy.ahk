@@ -7,13 +7,14 @@ SetTitleMatchMode, 2 ; Title can be part of the full title
 
 ;=== GLOBAL OS LEVEL SHORTCUTS ===
 	F18::Send #4 
+	F19::Send #5
+	F20::Send #6
+	F13::Send #1 ; sharpkeys::quicklaunch
+	+F13:: Send #2
+	#F13:: Send #3
 	::;ttt::
 		Send, %A_Hour%:%A_Min%
 		Return
-	;F19::
-	;F20:: 
-	F13::Send #1 ; sharpkeys::quicklaunch
-	#+:: Send #2
 
 	; Common symbols
 		::;star::
