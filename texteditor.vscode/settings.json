@@ -902,7 +902,6 @@
 "editor.formatOnPaste": true,
 "workbench.preferredDarkColorTheme": "GitHub Dark",
 "workbench.statusBar.visible": false,
-"breadcrumbs.enabled": false,
 "workbench.editor.showIcons": false,
 "window.title": "${dirty}${activeEditorShort}",
 "outline.showArrays": false,
