@@ -6,12 +6,16 @@ DetectHiddenWindows, On
 SetTitleMatchMode, 2 ; Title can be part of the full title
 
 ;=== GLOBAL OS LEVEL SHORTCUTS ===
-	F18::Send #4 
-	F19::Send #5
-	F20::Send #6
+
+
 	F13::Send #1 ; sharpkeys::quicklaunch
 	+F13:: Send #2
 	#F13:: Send #3
+
+	F18::Send #4 
+	F19::Send #5
+	F20::Send #6
+	
 	::;ttt::
 		Send, %A_Hour%:%A_Min%
 		Return
@@ -29,7 +33,12 @@ SetTitleMatchMode, 2 ; Title can be part of the full title
 		::;comm::
 			Send {U+260F} ;☏
 			return
-		::;jy::John Young
+		::;android::
+			Send {U+0D60} ;ൠ
+			return
+
+			::;jy::John Young
+
 	;
 
 	; One chord characters
@@ -45,11 +54,14 @@ SetTitleMatchMode, 2 ; Title can be part of the full title
 
 	; Logic symbols
 		$+#\::Send {U+00AC}	;	¬ ;not
-		$+#=::Send {U+2227}	; 	∧
+		$+#=::Send {U+2227}	; ∧ and
 		$+!right::Send {U+21D2}	;	⇒ ;+#! does an msoffice shortcut
 		$+!left::Send {U+21D0}	;	⇐
 		$+!=::Send {U+21D4}	;	⇔
 
+		::;or::
+		Send {U+2228} ; ∨ Or
+		return
 		::;then::
 		Send {U+2937}	; ⤷
 		return
@@ -82,14 +94,42 @@ SetTitleMatchMode, 2 ; Title can be part of the full title
 		::;prop::
 		Send {U+221D}	;∝:proportional to
 		Return
+		::;||::
+		Send {U+2225} ; ∥ parrelels
+		Return
+		::;n||::
+		Send {U+2226} ; ∦; does not parrelel
+		Return
+		::;[::
+		Send {U+2282} ; ⊂ subset of
+		Return
+		::;]::
+		Send {U+2283} ; ⊃ superset of
+		Return
+		::;-::
+		Send {U+22C8} ; ⋈ Relation
+		Return
+		::;=::
+		Send {U+2248} ;≈ almost equal
+		Return
+		::;==::
+		Send {U+2258} ; ≘ corresponds to
+		Return
+		::;btwn:: 
+		Send {U+226C} ; ≬ between
+		Return
+		::;sine:: 
+		Send {U+223F} ; ∿ sine wave
+		Return
+
 	;
 
 	;Sort anchors
-		::;top anchor::
+		::;topanc::
 			Send {U+2E17}	; Top anchor "⸗".
 			return
 		
-		 ::;bottom anchor::
+		 ::;bottomanc::
 		 	Send {U+03B9}	; Bottom anchor "ι".
 			return
 	;
@@ -101,22 +141,22 @@ SetTitleMatchMode, 2 ; Title can be part of the full title
 
 	; PARA folders
 		:*:;today::
-			Send -{U+2648} 
+			Send +1{U+2648} 
 			return
 		:*:;projects::
-			Send -{U+264A} 
+			Send +1{U+264A} 
 			return
 		:*:;areas::
-			Send -{U+264B}
+			Send +1{U+264B}
 			return
 		:*:;resources::
-			Send -{U+264C}
+			Send +1{U+264C}
 			return
 		:*:;archive::
-			Send -{U+264D} 
+			Send +1{U+264D}
 			return
 		:*:;reference::
-			Send {U+03B9}{U+2754}
+			Send {U+03B9}{U+2754} 
 			return
 	;
 

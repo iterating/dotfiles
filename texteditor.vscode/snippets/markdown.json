@@ -60,4 +60,52 @@
 			"description": "Inserts an iframe"
 	}
 
+
+	// Fold a new section
+	"sub": {
+		"prefix": [
+			"subscript"
+		],
+		"body": [
+			"<sub>$1 </sub> $0",
+		],
+		"description": "Subscript"
+	},
+
+	"super": {
+		"prefix": [
+			"superscript"
+		],
+		"body": [
+			"<sup>$1 </sup> $0",
+		],
+		"description": "Superscript"
+	},
+
+		"comm.star": {
+			"prefix": [
+				"Situation Task Action Response"
+			],
+			"body": [
+				"Situation: $1"
+				"Task: $2"
+				"Assessment: $3"
+				"Response: $4",
+			],
+			"description": "Situation Task Action Response"
+		},
+
+		"analysis.SWOT": {
+			"prefix": [
+				"SWOT analysis"
+			],
+			"body": [
+				"Strengths: $1"
+				"Weaknesses: $2"
+				"Opportunites: $3"
+				"Threats: $4",
+			],
+			"description": "SWOT Analysis"
+		},	
+
 }
