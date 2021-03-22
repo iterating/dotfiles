@@ -54,102 +54,105 @@ SetTitleMatchMode, 2 ; Title can be part of the full title
 	;
 
 	; Logic symbols
-		$+#\::Send {U+00AC}	;	¬ ;not
+		$+#\::Send {U+00AC}	;	¬ ;not 
 		$+#=::Send {U+2227}	; ∧ and
-		$+!right::Send {U+21D2}	;	⇒ ;+#! does an msoffice shortcut
+		$+!right::Send {U+21D2}	;	⇒ ;+#! does an msoffice shortcut 
 		$+!left::Send {U+21D0}	;	⇐
 		$+!=::Send {U+21D4}	;	⇔
 
-		::;or::
-		Send {U+2228} ; ∨ Or
-		return
-		::;then::
-		Send {U+2937}	; ⤷
-		return
-		::;bc::
-		Send {U+2235}	; ∵
-		return
-		::;t4::
-		Send {U+2234}	; ∴
-		return
-		::;tr::
-		Send {U+22A8}	; ⊨:True
-		return
-		::;ntr::
-		Send {U+22AD}	; ⊭:Not true
-		return
-		::;pr::
-		Send {U+22A2} 	; ⊢:Proves
-		return
-		::;npr::
-		Send {U+22AC}	; ⊬:Does not prove
-		return
-		::;models::
-		Send {U+22A7}	; ⊧:Models
-		Return
-		::;map::
-		Send {U+22A1}	; ⊡: Maps to
-		Return
-		::;union::
-		Send {U+222A} 	;∪:Union
-		Return
-		::;intersection::
-		Send {U+2229}  ;∩:Intersection
-		::;prop::
-		Send {U+221D}	;∝:proportional to
-		Return
-		::;||::
-		Send {U+2225} ; ∥ parrelels
-		Return
-		::;n||::
-		Send {U+2226} ; ∦; does not parrelel
-		Return
-		::;[::
-		Send {U+2282} ; ⊂ subset of
-		Return
-		::;]::
-		Send {U+2283} ; ⊃ superset of
-		Return
-		::;-::
-		Send {U+22C8} ; ⋈ Relation
-		Return
-		::;=::
-		Send {U+2248} ;≈ almost equal
-		Return
-		::;==::
-		Send {U+2258} ; ≘ corresponds to
-		Return
-		::;btwn:: 
-		Send {U+226C} ; ≬ between
-		Return
-		::;sine:: 
-		Send {U+223F} ; ∿ sine wave
-		Return
-		::;delt::
-		Send {U+0394} ;Δ change
-		Return
-		::;p1::
-		Send {U+2387} ;⎇ path1
-		Return
-		::;p2::
-		Send {U+2325} ;⌥ path2
-		Return
+		::;then::		; ⤷ : then
+			Send {U+2937}
+			return
+		::;bc::			; ∵ : because
+			Send {U+2235}
+			return
+		::;t4::				; ∴ : therefore
+			Send {U+2234}
+			return
+		::;tr::				; ⊨ : True
+			Send {U+22A8}
+			return
+		::;ntr::		; ⊭ : Not true
+			Send {U+22AD}	
+			return
+		::;pr::		; ⊢ : Proves
+			Send {U+22A2} 
+			return
+		::;npr::	; ⊬ : Does not prove
+			Send {U+22AC}	
+			return
+		::;models::	; ⊧ : Models
+			Send {U+22A7}	
+			Return
+		::;map::			; ⊡ : Maps to
+			Send {U+22A1}
+			Return
+		::;and:: ; ∧ : And
+			Send {U+2227}
+			Return
+		::;or::		; ∨ : Or
+			Send {U+2228} 
+			Return
+		::;union::	;∪ : Union
+			Send {U+222A} 
+			Return
+		::;intersection::		  ;∩ : Intersection
+			Send {U+2229}
+			Return
+		::;prop::		;∝ : proportional to
+			Send {U+221D}	
+			Return
+		::;||::			 ; ∥ : parrelels
+			Send {U+2225}
+			Return
+		::;n||::		 ; ∦ ; does not parrelel
+			Send {U+2226}
+			Return
+		::;[::			 ; ⊂ : subset of
+			Send {U+2282}
+			Return
+		::;]::			 ; ⊃ : superset of
+			Send {U+2283}
+			Return
+		::;-::		 ; ⋈ : Relation
+			Send {U+22C8}
+			Return
+		::;=::		 ;≈ : almost equal
+			Send {U+2248}
+			Return
+		::;==::		 ; ≘ : corresponds to
+			Send {U+2258}
+			Return
+		::;btwn:: 		; ≬ : between
+			Send {U+226C} 
+			Return
+		::;sine:: 		 ; ∿: sine wave
+			Send {U+223F}
+			Return
+		::;delt::			 ; Δ : change
+			Send {U+0394}
+			Return
+		::;p1::				; ⎇ : path1
+			Send {U+2387} 
+			Return
+		::;p2::			 ; ⌥ : path2
+			Send {U+2325}
+			Return
 	;
 
 	;Sort anchors
-		::;topanc::
-			Send {U+2E17}	; Top anchor "⸗".
-			return
-		
-		 ::;bottomanc::
-		 	Send {U+03B9}	; Bottom anchor "ι".
+		::;topanc:: 	;  ⸗ : Top anchor
+			Send {U+2E17}
+			Return
+	 ::;botanc:: 		; ι : Bottom anchor
+		 	Send {U+03B9}
 			return
 	;
 		Flashtext:  
 			SplashTextOn , 200, 0, Autohotkey replaced,
 			sleep,500
 			SplashTextOff
-		return
+			return
 
 	; PARA folders
 		:*:;today::
