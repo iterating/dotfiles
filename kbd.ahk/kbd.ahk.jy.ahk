@@ -20,6 +20,7 @@ SetTitleMatchMode, 2 ; Title can be part of the full title
 		Send, %A_Hour%:%A_Min%
 		Return
 
+
 	; Common symbols
 		::;star::
 			Send {U+2730} ;✰
@@ -86,6 +87,9 @@ SetTitleMatchMode, 2 ; Title can be part of the full title
 		::;models::
 		Send {U+22A7}	; ⊧:Models
 		Return
+		::;map::
+		Send {U+22A1}	; ⊡: Maps to
+		Return
 		::;union::
 		Send {U+222A} 	;∪:Union
 		Return
@@ -121,7 +125,15 @@ SetTitleMatchMode, 2 ; Title can be part of the full title
 		::;sine:: 
 		Send {U+223F} ; ∿ sine wave
 		Return
-
+		::;delt::
+		Send {U+0394} ;Δ change
+		Return
+		::;p1::
+		Send {U+2387} ;⎇ path1
+		Return
+		::;p2::
+		Send {U+2325} ;⌥ path2
+		Return
 	;
 
 	;Sort anchors
@@ -141,19 +153,19 @@ SetTitleMatchMode, 2 ; Title can be part of the full title
 
 	; PARA folders
 		:*:;today::
-			Send +1{U+2648} 
+			Send +1{U+2C30} 
 			return
 		:*:;projects::
-			Send +1{U+264A} 
+			Send +1{U+2C31} 
 			return
 		:*:;areas::
-			Send +1{U+264B}
+			Send +1{U+2C32}
 			return
 		:*:;resources::
-			Send +1{U+264C}
+			Send +1{U+2C33}
 			return
 		:*:;archive::
-			Send +1{U+264D}
+			Send +1{U+2C34}
 			return
 		:*:;reference::
 			Send {U+03B9}{U+2754} 

@@ -23,7 +23,6 @@
 
 // Fold a selection and name it
 	"fold.selected": {
-		"prefix" : ["fold.selected"],
 		"body":
 			["<details><summary>$1",
 			"  </summary>",
@@ -35,7 +34,6 @@
 
 	// Fold a new section
 	"fold.new": {
-		"prefix" : ["fold.new"],
 		"body":
 			["<details><summary>$1",
 			"  </summary>",
@@ -63,9 +61,7 @@
 
 	// Fold a new section
 	"sub": {
-		"prefix": [
-			"subscript"
-		],
+		"prefix": ["subscript"],
 		"body": [
 			"<sub>$1 </sub> $0",
 		],
@@ -73,19 +69,24 @@
 	},
 
 	"super": {
-		"prefix": [
-			"superscript"
-		],
+		"prefix": ["superscript"],
 		"body": [
 			"<sup>$1 </sup> $0",
 		],
 		"description": "Superscript"
 	},
 
+		"md.table":{
+				"body": [
+					"$1| $2"
+					"-|-"
+					" $3 | $4 "
+					"$0"
+						],
+		}
+
 		"comm.star": {
-			"prefix": [
-				"Situation Task Action Response"
-			],
+			"prefix": ["Situation Task Action Response"],
 			"body": [
 				"Situation: $1"
 				"Task: $2"
@@ -96,16 +97,39 @@
 		},
 
 		"analysis.SWOT": {
-			"prefix": [
-				"SWOT analysis"
-			],
 			"body": [
 				"Strengths: $1"
 				"Weaknesses: $2"
 				"Opportunites: $3"
 				"Threats: $4",
-			],
-			"description": "SWOT Analysis"
-		},	
+			]
+		},
 
+		"journal":{
+			"body": [
+"- Wake by **8: 30**  recall dreams and write on phone"
+ 
+"##### Today I am thankful for:  "
+""
+"Start egg"
+"Water bottles to desk"
+"- [ ] Intense Activity"
+"- [ ] [[Meditate|۞Emo.meditation.headspace]]"
+"###### My intention for the day:  "
+""
+"###### What can I today that future me would appreciate?"  
+""
+"###### How do I want to feel today?"  
+""
+"- Lunch"
+""
+"- Afternoon routine"
+""
+"- [ ] Clean up dishes before dinner"
+""
+"- [ ] Clean up Kitchen after dinner, take out litter"
+"- [ ] Plug in electronics"
+"###### What am I thankful to have acoomplished today?""
+			]
+	 },
 }

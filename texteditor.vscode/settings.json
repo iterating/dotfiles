@@ -818,7 +818,8 @@
 	"markdownShortcuts.icons.strikethrough": false,
 	"workbench.startupEditor": "newUntitledFile",
 	"[markdown]": {
-			"editor.quickSuggestions": false
+			"editor.quickSuggestions": false,
+			"editor.defaultFormatter": "yzhang.markdown-all-in-one"
 	},
 	"sync.forceUpload": true,
 	"extensions.ignoreRecommendations": false,
@@ -1024,8 +1025,18 @@
 	"FIXME",
 	"TODO",
 	"XXX",
-	"- [ ]"
+	"- [ ]",
+	"[ ]",
+	";wt",
+	";wn",
+	";wy",
+	";wr",
+	";hw",
+	"ɁɁ"
 ],
+"dendron.dailyJournalDomain": "-daily",
+"dendron.defaultScratchName": "-daily.quicknote",
+"todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
 "workbench.statusBar.visible": false,
 
 }
