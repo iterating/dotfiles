@@ -56,11 +56,13 @@ SetTitleMatchMode, 2 ; Title can be part of the full title
 	; Logic symbols
 		$+#\::Send {U+00AC}	;	¬ ;not 
 		$+#=::Send {U+2227}	; ∧ and
-		$+!left::Send {U+21D0}	;	⇐
 		$+!=::Send {U+21D4}	;	⇔
 			::;=>:: ; ⇒ : 
 				Send {U+21D2}
 				return 
+			::;<=:: ; ⇐ :
+				Send {U+21D0}
+				return
 		::;then::		; ⤷ : then
 			Send {U+2937}
 			return

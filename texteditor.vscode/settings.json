@@ -787,7 +787,6 @@
 	"workbench.activityBar.visible": true,
 	"explorer.openEditors.visible": 0,
 	"telemetry.enableTelemetry": false,
-	"editor.lineNumbers": "off",
 	"scm.diffDecorations": "minimap",
 	"scm.diffDecorationsGutterVisibility": "hover",
 	"gutterpreview.imagePreviewMaxHeight": 500,
@@ -1039,5 +1038,6 @@
 "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
 "workbench.statusBar.visible": false,
 "dendron.defaultJournalDateFormat": "y.MM.dd.ccc",
+"window.zoomLevel": 1,
 
 }
