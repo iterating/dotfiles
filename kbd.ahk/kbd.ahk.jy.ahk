@@ -59,7 +59,9 @@ SetTitleMatchMode, 2 ; Title can be part of the full title
 		$+!right::Send {U+21D2}	;	⇒ ;+#! does an msoffice shortcut 
 		$+!left::Send {U+21D0}	;	⇐
 		$+!=::Send {U+21D4}	;	⇔
-
+			::;=>:: ; ⇒ : 
+				Send {U+21D2}
+				return 
 		::;then::		; ⤷ : then
 			Send {U+2937}
 			return
@@ -93,14 +95,17 @@ SetTitleMatchMode, 2 ; Title can be part of the full title
 		::;or::		; ∨ : Or
 			Send {U+2228} 
 			Return
-		::;union::	;∪ : Union
+		::;union::	; ∪ : Union
 			Send {U+222A} 
 			Return
 		::;intersection::		  ;∩ : Intersection
 			Send {U+2229}
 			Return
-		::;prop::		;∝ : proportional to
+		::;prop::		; ∝ : proportional to
 			Send {U+221D}	
+			Return
+		::;it::			; ↬ : iterate
+			Send {U+21AC}
 			Return
 		::;||::			 ; ∥ : parrelels
 			Send {U+2225}
