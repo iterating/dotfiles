@@ -762,16 +762,6 @@
         "when": "editorTextFocus && !editorReadonly"
     },
     {
-        "key": "shift+alt+right",
-        "command": "editor.action.indentLines",
-        "when": "editorTextFocus && !editorReadonly"
-    },
-    {
-        "key": "shift+alt+left",
-        "command": "markdown.extension.onIndentLines",
-        "when": "editorTextFocus && !suggestWidgetVisible && editorLangId == 'markdown'"
-    },
-    {
         "key": "shift+alt+win+left",
         "command": "workbench.action.moveEditorToPreviousGroup"
     },
@@ -806,5 +796,30 @@
         "key": "shift+alt+right",
         "command": "-editor.action.smartSelect.expand",
         "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+alt+left",
+        "command": "editor.action.outdentLines",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "shift+alt+right",
+        "command": "markdown.extension.onIndentLines",
+        "when": "editorTextFocus && !suggestWidgetVisible && editorLangId == 'markdown'"
+    },
+    {
+        "key": "shift+alt+left",
+        "command": "markdown.extension.onOutdentLines",
+        "when": "editorTextFocus && !suggestWidgetVisible && editorLangId == 'markdown'"
+    },
+    {
+        "key": "shift+alt+up",
+        "command": "editor.action.moveLinesUpAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "alt+up",
+        "command": "-editor.action.moveLinesUpAction",
+        "when": "editorTextFocus && !editorReadonly"
     }
 ]

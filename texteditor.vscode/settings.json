@@ -1039,5 +1039,6 @@
 "workbench.statusBar.visible": false,
 "dendron.defaultJournalDateFormat": "y.MM.dd.ccc",
 "window.zoomLevel": 1,
+"editor.lineNumbers": "off",
 
 }
