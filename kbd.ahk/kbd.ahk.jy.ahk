@@ -7,12 +7,11 @@ SetTitleMatchMode, 2 ; Title can be part of the full title
 
 ;=== GLOBAL OS LEVEL SHORTCUTS ===
 
-
-	F13::Send #1 ; sharpkeys::quicklaunch
+	F13::Send #1 ; sharpkeys::quicklaunch ; CapsL→F13→quicklaunch.#1
 	+F13:: Send #2
 	#F13:: Send #3
 
-	F18::Send #4 
+	F18::Send #4 	; Foot pedals{1 2 3}→{F18 F19 F20}
 	F19::Send #5
 	F20::Send #6
 	
@@ -37,9 +36,6 @@ SetTitleMatchMode, 2 ; Title can be part of the full title
 		::;android::
 			Send {U+0D60} ;ൠ
 			return
-
-			::;jy::John Young
-
 	;
 
 	; One chord characters
