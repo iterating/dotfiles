@@ -5,7 +5,7 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 DetectHiddenWindows, On
 SetTitleMatchMode, 2 ; Title can be part of the full title
 
-;=== GLOBAL OS LEVEL SHORTCUTS ===
+;// GLOBAL OS LEVEL SHORTCUTS
 
 	F13::Send #1 ; sharpkeys::quicklaunch ; CapsL→F13→quicklaunch.#1
 	+F13:: Send #2
@@ -49,7 +49,7 @@ SetTitleMatchMode, 2 ; Title can be part of the full title
 		$+#'::Send {U+2033}	;	Quote ″
 	;
 
-	; Logic symbols
+	;//Logic symbols
 		$+#\::Send {U+00AC}	;	¬ ;not 
 		$+#=::Send {U+2227}	; ∧ and
 		$+!=::Send {U+21D4}	;	⇔
@@ -140,23 +140,23 @@ SetTitleMatchMode, 2 ; Title can be part of the full title
 		::;p2::			 ; ⌥ : path2
 			Send {U+2325}
 			Return
-	;
+	;//
 
-	;Sort anchors
+	;//Sort anchors
 		::;topanc:: 	;  ⸗ : Top anchor
 			Send {U+2E17}
 			Return
 	 ::;botanc:: 		; ι : Bottom anchor
 		 	Send {U+03B9}
 			return
-	;
+	;//
 		Flashtext:  
 			SplashTextOn , 200, 0, Autohotkey replaced,
 			sleep,500
 			SplashTextOff
 			return
 
-	; PARA folders
+	;// PARA folders
 		:*:;today::
 			Send +1{U+2C30} 
 			return
@@ -175,7 +175,7 @@ SetTitleMatchMode, 2 ; Title can be part of the full title
 		:*:;reference::
 			Send {U+03B9}{U+2754} 
 			return
-	;
+	;//
 
 	; -[ ] learn to make leader key in AHK
 	; -[ ] set a leader key for special characters
@@ -245,35 +245,34 @@ SetTitleMatchMode, 2 ; Title can be part of the full title
 		#^!+Space::
 		Send #^+Space
 		return
-	; [Open Keybinds]:
+	; ι❔Open Keybinds:
 		; #ASF QR ZXCV F1234 Shift F13 Esc 
 		; #JKL N/ UIO HBY F9 10 11 12 Bksp [] \ Enter PgU PgD ` End Ins Del
-;=== APP LEVEL SHORTCUTS ===
-	; Windows Fileexplorer [
+;//APP LEVEL SHORTCUTS
+	;// Windows Fileexplorer [
 		::;flat::
 		Send System.Kind:<>folder
 		Gosub, Flashtext	
 		return
 	
-	; Onenote UWP
+	;// Onenote UWP
 		#If WinActive("- OneNote ahk_class ApplicationFrameWindow", "OneNote")
-			; -[ ] Fold up the ribbon at start
-			;Send, {alt}{enter}{alt}
-
-		; Onenote shared
-			;#Fold
+			;\\ - [ ] Fold up the ribbon at start
+				;	Send, {alt}{enter}{alt}
+		;\\ Onenote shared
+			;\\Fold
 				$^F4:: Send, !+=
 				$F4:: Send, !+-
 				$^+[:: Send, !+-
 				$^+]:: Send, !+=
-			; Ctrl Shift P becomes command palette
+			;\\Ctrl Shift P becomes command palette
 				$^+p:: Send, {F1}
 
-			;#Indent
+			;\\ Indent
 				$^]:: Send, `t
 				$^[:: Send, +`t
 
-			;#Headers
+			;\\ Headers
 				$^+0:: Send, ^!0
 				$^+1:: Send, ^!1
 				$^+2:: Send, ^!2
@@ -281,49 +280,46 @@ SetTitleMatchMode, 2 ; Title can be part of the full title
 				$^+4:: Send, ^!4
 				$^+5:: Send, ^!5
 				$^+6:: Send, ^!6
-				; Ordered and unordered List
+			;\\ Ordered and unordered List
 				^+7:: Send, ^/
 				^+8:: Send, ^.
 
-			; Group drawing into anchorable object
-			$^d::
-				Send, {Ctrl Down}w{Ctrl Up}
-				sleep, 100
-				Send, {Ctrl Down}x{Ctrl Up}
-				sleep, 100
-				Send, {Ctrl Down}v{Ctrl Up}
-				sleep, 80
-				Send, {Enter}
-				sleep, 100
-				Send, {Ctrl Down}a{Ctrl Up}
-				sleep, 80
-				Send, {Ctrl Down}a{Ctrl Up}
-				sleep, 100
-				Send, {Ctrl Down}x{Ctrl Up}
-			Return
+			;\\ Group drawing into anchorable object
+				$^d::
+					Send, {Ctrl Down}w{Ctrl Up}
+					sleep, 100
+					Send, {Ctrl Down}x{Ctrl Up}
+					sleep, 100
+					Send, {Ctrl Down}v{Ctrl Up}
+					sleep, 80
+					Send, {Enter}
+					sleep, 100
+					Send, {Ctrl Down}a{Ctrl Up}
+					sleep, 80
+					Send, {Ctrl Down}a{Ctrl Up}
+					sleep, 100
+					Send, {Ctrl Down}x{Ctrl Up}
+					Return
 
 		#If
 
-	; Onenote 2016
+	;// Onenote 2016
 		#IfWinActive, ahk_exe ONENOTE.EXE
-
 		; - [ ] Change color with one keystroke
-		;^w::Send, !5{Tab}5{Tab}0{Enter} ; red
-
-		; Onenote shared
-			;#Fold
+			; ^w::Send, !5{Tab}5{Tab}0{Enter} ; red
+		;// Onenote shared
+			;// Fold
 				^F4:: Send, !+=
 				F4:: Send, !+-
 				^+[:: Send, !+-
 				^+]:: Send, !+=
-			; Ctrl Shift P becomes command palette
+			;// Ctrl Shift P becomes command palette
 				^+p:: Send, {F1}
-
-			;#Indent
+			;// Indent
 				^]:: Send, `t
 				^[:: Send, +`t
 
-			;#Headers
+			;// Headers
 				^+0:: Send, ^!0
 				^+1:: Send, ^!1
 				^+2:: Send, ^!2
@@ -331,56 +327,52 @@ SetTitleMatchMode, 2 ; Title can be part of the full title
 				^+4:: Send, ^!4
 				^+5:: Send, ^!5
 				^+6:: Send, ^!6
-				; Ordered and unordered List
+			;// Ordered and unordered List
 				^+7:: Send, ^/
 				^+8:: Send, ^.
-
-			; Group drawing into anchorable object
-			^d::
-				Send, {Ctrl Down}w{Ctrl Up}
-				sleep, 100
-				Send, {Ctrl Down}x{Ctrl Up}
-				sleep, 100
-				Send, {Ctrl Down}v{Ctrl Up}
-				sleep, 80
-				Send, {Enter}
-				sleep, 100
-				Send, {Ctrl Down}a{Ctrl Up}
-				sleep, 80
-				Send, {Ctrl Down}a{Ctrl Up}
-				sleep, 100
-				Send, {Ctrl Down}x{Ctrl Up}
+			;// Group drawing into anchorable object
+				^d::
+					Send, {Ctrl Down}w{Ctrl Up}
+					sleep, 100
+					Send, {Ctrl Down}x{Ctrl Up}
+					sleep, 100
+					Send, {Ctrl Down}v{Ctrl Up}
+					sleep, 80
+					Send, {Enter}
+					sleep, 100
+					Send, {Ctrl Down}a{Ctrl Up}
+					sleep, 80
+					Send, {Ctrl Down}a{Ctrl Up}
+					sleep, 100
+					Send, {Ctrl Down}x{Ctrl Up}
 			Return
 		#If
 
-	; Notion
+	;// Notion
 		#IfWinActive, ahk_exe Notion.exe
-			;#Navigation
-				!Right:: Send, ^]
-				!Left:: Send, ^[
-			; Indent
-				^[:: Send, +`t
-				^]:: Send, `t
-			; Fold
-				F4:: Send, ^`n
-
-			; Swapping lines
-				!+Up:: Send, ^+{Up}
-				!+Down:: Send, ^+{Down}
-				^+Up:: Send, !+{Up}
-				^+Down:: Send, !+{Down}
-			;#Checklist
-				^0:: Send, ^+0
-				^1:: Send, ^+4
-				^2:: Send, ^+0 ;unassigned
-				^3:: Send, ^+0	;unassigned
-				^4:: Send, ^+7
-				^5:: Send, ^+9
-				^+7:: Send, ^+6
-				^+8:: Send, ^+5
-				^`:: Send, ^+8
-				F2:: Send, ^+r
-
+		;//Navigation
+			!Right:: Send, ^]
+			!Left:: Send, ^[
+		;//Indent
+			^[:: Send, +`t
+			^]:: Send, `t
+		;//Fold
+			F4:: Send, ^`n
+		;// Swapping lines
+			!+Up:: Send, ^+{Up}
+			!+Down:: Send, ^+{Down}
+			^+Up:: Send, !+{Up}
+			^+Down:: Send, !+{Down}
+		;//Checklist
+			^0:: Send, ^+0
+			^1:: Send, ^+4
+			^2:: Send, ^+0 ;unassigned
+			^3:: Send, ^+0	;unassigned
+			^4:: Send, ^+7
+			^5:: Send, ^+9
+			^+7:: Send, ^+6
+			^+8:: Send, ^+5
+			^`:: Send, ^+8
+			F2:: Send, ^+r
 		#If    ; turn off context sensitivity
-; [Notes] can map: +# and #+
-; can map f6 f7 f8 f9 f10 f12
+
