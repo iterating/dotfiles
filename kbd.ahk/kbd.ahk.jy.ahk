@@ -5,22 +5,20 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 DetectHiddenWindows, On
 SetTitleMatchMode, 2 ; Title can be part of the full title
 
-;// GLOBAL OS LEVEL SHORTCUTS
-
+;// == GLOBAL OS LEVEL SHORTCUTS ==
 	F13::Send #1 ; sharpkeys::quicklaunch ; CapsL→F13→quicklaunch.#1
 	+F13:: Send #2
 	#F13:: Send #3
-
 	F18::Send #4 	; Foot pedals{1 2 3}→{F18 F19 F20}
 	F19::Send #5
 	F20::Send #6
 	
-	::;ttt::
+	::;ttt:: ;// timestamp
 		Send, %A_Hour%:%A_Min%
 		Return
 
 
-	; Common symbols
+	;// symbols.common
 		::;star::
 			Send {U+2730} ;✰
 			return
@@ -36,10 +34,10 @@ SetTitleMatchMode, 2 ; Title can be part of the full title
 		::;android::
 			Send {U+0D60} ;ൠ
 			return
-	;
+		;//End symbols.common
 
-	; One chord characters
-		$+#/::Send {U+241}	;	Question mark Ɂ
+	;//characters.singlechord
+	 	$+#/::Send {U+241}	;	Question mark Ɂ
 		$+#up::Send {U+2191}	;	↑
 		$+#right::Send {U+2192}	;	→
 		$+#down::Send {U+2193}	;	↓
@@ -47,16 +45,16 @@ SetTitleMatchMode, 2 ; Title can be part of the full title
 
 		$+#;::Send {U+FF1A}	;	full width colon "："
 		$+#'::Send {U+2033}	;	Quote ″
-	;
+		;//end characters.singlechord
 
-	;//Logic symbols
+	;//symbols.logic
 		$+#\::Send {U+00AC}	;	¬ ;not 
 		$+#=::Send {U+2227}	; ∧ and
 		$+!=::Send {U+21D4}	;	⇔
-			::;=>:: ; ⇒ : 
-				Send {U+21D2}
-				return 
-			::;<=:: ; ⇐ :
+		::;=>:: ; ⇒ : 
+			Send {U+21D2}
+			return 
+		::;<=:: ; ⇐ :
 				Send {U+21D0}
 				return
 		::;then::		; ⤷ : then
@@ -140,23 +138,23 @@ SetTitleMatchMode, 2 ; Title can be part of the full title
 		::;p2::			 ; ⌥ : path2
 			Send {U+2325}
 			Return
-	;//
+		;//end symbols.logic
 
-	;//Sort anchors
+	;//⊞.anchors
 		::;topanc:: 	;  ⸗ : Top anchor
 			Send {U+2E17}
 			Return
-	 ::;botanc:: 		; ι : Bottom anchor
-		 	Send {U+03B9}
+	 	::;botanc:: 		; ι : Bottom anchor
+			Send {U+03B9}
 			return
-	;//
+		;//end ⊞.anchors
 		Flashtext:  
 			SplashTextOn , 200, 0, Autohotkey replaced,
 			sleep,500
 			SplashTextOff
 			return
 
-	;// PARA folders
+	;//⊞.para
 		:*:;today::
 			Send +1{U+2C30} 
 			return
@@ -175,16 +173,14 @@ SetTitleMatchMode, 2 ; Title can be part of the full title
 		:*:;reference::
 			Send {U+03B9}{U+2754} 
 			return
-	;//
+		;//end ⊞.para
 
-	; -[ ] learn to make leader key in AHK
-	; -[ ] set a leader key for special characters
 
-	; CapsLock switches to last app
-		;	SetCapsLockState, AlwaysOff
-		;	$CapsLock::!Tab
+	;//OFF CapsLock switches to last app
+		;OFF	SetCapsLockState, AlwaysOff
+		;OFF	$CapsLock::!Tab
 
-	; Tapping Shift copies
+	;// Tapping Shift copies
 		~$LShift::
 			KeyWait, LShift
 		return
@@ -193,10 +189,10 @@ SetTitleMatchMode, 2 ; Title can be part of the full title
 				SendEvent {Ctrl Down}c{Ctrl Up}
 		return
 
-	; Keep window on top
+	;// Keep window on top
 	 $#P::Winset, Alwaysontop, , A
-	; Toggle Anki adder
- 		;	$#`::
+	;//OFF Toggle Anki adder
+ 		;OFF	$#`::
  		;   IfWinExist, Add
  		;   {
 		;   ; Toggle switch
@@ -211,13 +207,13 @@ SetTitleMatchMode, 2 ; Title can be part of the full title
 		;     return
 
 
-	; Swap Ctrl-Tab and  Alt-Tab
+	;// Swap Ctrl-Tab and  Alt-Tab
 		LCtrl & Tab:: AltTab
 		!Tab::
 			Send {Ctrl down}{Tab}
 		return
 
-	; Block MSOffice shortcuts
+	;// Block MSOffice shortcuts
 		#F1::
 		Send #^{F1}
 		return
@@ -245,34 +241,32 @@ SetTitleMatchMode, 2 ; Title can be part of the full title
 		#^!+Space::
 		Send #^+Space
 		return
-	; ι❔Open Keybinds:
+	;// ι❔Open Keybinds:
 		; #ASF QR ZXCV F1234 Shift F13 Esc 
 		; #JKL N/ UIO HBY F9 10 11 12 Bksp [] \ Enter PgU PgD ` End Ins Del
-;//APP LEVEL SHORTCUTS
+;// == APP LEVEL SHORTCUTS ==
 	;// Windows Fileexplorer [
 		::;flat::
 		Send System.Kind:<>folder
 		Gosub, Flashtext	
 		return
 	
-	;// Onenote UWP
+	;// Onenote.UWP
 		#If WinActive("- OneNote ahk_class ApplicationFrameWindow", "OneNote")
-			;\\ - [ ] Fold up the ribbon at start
+			;// - [ ] Fold up the ribbon at start
 				;	Send, {alt}{enter}{alt}
-		;\\ Onenote shared
-			;\\Fold
+		;// Onenote.shared
+			;// Folding
 				$^F4:: Send, !+=
 				$F4:: Send, !+-
 				$^+[:: Send, !+-
 				$^+]:: Send, !+=
-			;\\Ctrl Shift P becomes command palette
+			;// Ctrl+Shift+P→ command palette
 				$^+p:: Send, {F1}
-
-			;\\ Indent
+			;// Indent
 				$^]:: Send, `t
 				$^[:: Send, +`t
-
-			;\\ Headers
+			;// Headers
 				$^+0:: Send, ^!0
 				$^+1:: Send, ^!1
 				$^+2:: Send, ^!2
@@ -280,11 +274,10 @@ SetTitleMatchMode, 2 ; Title can be part of the full title
 				$^+4:: Send, ^!4
 				$^+5:: Send, ^!5
 				$^+6:: Send, ^!6
-			;\\ Ordered and unordered List
+			;// Ordered and unordered List
 				^+7:: Send, ^/
 				^+8:: Send, ^.
-
-			;\\ Group drawing into anchorable object
+			;// Group drawing into anchorable object
 				$^d::
 					Send, {Ctrl Down}w{Ctrl Up}
 					sleep, 100
@@ -300,20 +293,21 @@ SetTitleMatchMode, 2 ; Title can be part of the full title
 					sleep, 100
 					Send, {Ctrl Down}x{Ctrl Up}
 					Return
-
+			;// End Onenote.shared
 		#If
+		;// End Onenote.UWP
 
-	;// Onenote 2016
+	;// Onenote.2016
 		#IfWinActive, ahk_exe ONENOTE.EXE
 		; - [ ] Change color with one keystroke
 			; ^w::Send, !5{Tab}5{Tab}0{Enter} ; red
-		;// Onenote shared
+		;// Onenote.shared
 			;// Fold
 				^F4:: Send, !+=
 				F4:: Send, !+-
 				^+[:: Send, !+-
 				^+]:: Send, !+=
-			;// Ctrl Shift P becomes command palette
+			;// Ctrl+Shift+P→ command palette
 				^+p:: Send, {F1}
 			;// Indent
 				^]:: Send, `t
@@ -345,25 +339,27 @@ SetTitleMatchMode, 2 ; Title can be part of the full title
 					Send, {Ctrl Down}a{Ctrl Up}
 					sleep, 100
 					Send, {Ctrl Down}x{Ctrl Up}
-			Return
+				return
+			;// End Onenote.shared
 		#If
+		;// End Onenote.2016
 
 	;// Notion
 		#IfWinActive, ahk_exe Notion.exe
-		;//Navigation
+		;// Navigation
 			!Right:: Send, ^]
 			!Left:: Send, ^[
-		;//Indent
+		;// Indent
 			^[:: Send, +`t
 			^]:: Send, `t
-		;//Fold
+		;// Fold
 			F4:: Send, ^`n
 		;// Swapping lines
 			!+Up:: Send, ^+{Up}
 			!+Down:: Send, ^+{Down}
 			^+Up:: Send, !+{Up}
 			^+Down:: Send, !+{Down}
-		;//Checklist
+		;// Checklist
 			^0:: Send, ^+0
 			^1:: Send, ^+4
 			^2:: Send, ^+0 ;unassigned
@@ -375,4 +371,5 @@ SetTitleMatchMode, 2 ; Title can be part of the full title
 			^`:: Send, ^+8
 			F2:: Send, ^+r
 		#If    ; turn off context sensitivity
+		;// End Notion
 
