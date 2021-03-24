@@ -13,123 +13,131 @@
 	// 	"description": "Log output to console"
 	// }
 
-// Make a keyboard symbol in the selected
-	"kbd": {
-		"prefix" : ["kbd"],
-		"body": ["<kbd>$1</kbd> $0"],
-		"description": "type a Keyboard button"
-	},
-
-
-// Fold a selection and name it
+// Folding
 	"fold.selected": {
 		"body":
-			["<details><summary>$1",
-			"  </summary>",
-			"  ${TM_SELECTED_TEXT}",
-			"  </details>",
-			"$0"],
-		"description": "Creates a toggle fold on the selection"
-	},
-
-	// Fold a new section
+				["<details><summary>$1",
+					"  </summary>",
+					"  ${TM_SELECTED_TEXT}",
+					"  </details>",
+					"$0"],
+					"description": "Creates a toggle fold on the selection"
+				},
 	"fold.new": {
 		"body":
-			["<details><summary>$1",
+		["<details><summary>$1",
 			"  </summary>",
 			"  $2",
 			"  </details>",
 			"  $0"],
-		"description": "Creates a new toggle fold"
-	},
-
-// Make a page break
-	"pagebreak": {
-		"prefix" : ["Page Break"],
-		"body": " <div style="page-break-after: always"></div> ",
-		"description": "Creates a Page Break"
-	},
-
-	// Insert a iframe in selection
-
-	"iframe": {
+			"description": "Creates a new toggle fold"
+		},
+	// Markdown text formatting
+		"pagebreak": {
+			"prefix" : ["Page Break"],
+			"body": " <div style="page-break-after: always"></div> ",
+			"description": "Creates a Page Break"
+		},
+		"iframe": {
 			"prefix" : ["IFrame"],
 			"body": ["<iframe src=$1></iframe>$0"],
 			"description": "Inserts an iframe"
-	}
-
-
-	// Fold a new section
-	"sub": {
-		"prefix": ["subscript"],
-		"body": [
-			"<sub>$1 </sub> $0",
-		],
-		"description": "Subscript"
-	},
-
-	"super": {
-		"prefix": ["superscript"],
-		"body": [
-			"<sup>$1 </sup> $0",
-		],
-		"description": "Superscript"
-	},
-
-		"md.table":{
-				"body": [
-					"$1| $2"
-					"-|-"
-					" $3 | $4 "
-					"$0"
-						],
 		}
-
-		"comm.star": {
-			"prefix": ["Situation Task Action Response"],
+		"sub": {
+			"prefix": ["subscript"],
 			"body": [
-				"Situation: $1"
-				"Task: $2"
-				"Assessment: $3"
-				"Response: $4",
+				"<sub>$1 </sub> $0",
 			],
-			"description": "Situation Task Action Response"
+			"description": "Subscript"
 		},
-
-		"analysis.SWOT": {
+		"super": {
+			"prefix": ["superscript"],
 			"body": [
-				"Strengths: $1"
-				"Weaknesses: $2"
-				"Opportunites: $3"
-				"Threats: $4",
-			]
+				"<sup>$1 </sup> $0",
+			],
+			"description": "Superscript"
 		},
-
+		"md.table":{
+			"body": [
+				"$1| $2"
+				"-|-"
+				" $3 | $4 "
+				"$0"
+			],
+		},
+		"kbd": {
+			"prefix" : ["kbd"],
+			"body": ["<kbd>$1</kbd> $0"],
+			"description": "type a Keyboard button"
+		},
+// Thinking templates
+	"comm.star": {
+		"prefix": ["Situation Task Action Response"],
+		"body": [
+			"Situation: $1"
+			"Task: $2"
+			"Assessment: $3"
+			"Response: $4",
+		],
+		"description": "Situation Task Action Response"
+	},
+	"analysis.SWOT": {
+		"prefix": ["Strengths Weakness Opportunities Threats"],
+		"body": [
+			"Strengths: $1"
+			"Weaknesses: $2"
+			"Opportunites: $3"
+			"Threats: $4",
+		],
+		"description": "Strengths Weaknesses Opportuities Threats"
+	},
+// Journal
 		"journal":{
 			"body": [
-"- Wake by **8: 30**  recall dreams and write on phone"
- 
-"##### Today I am thankful for:  "
-""
-"Start egg"
-"Water bottles to desk"
-"- [ ] Intense Activity"
-"- [ ] [[Meditate|۞Emo.meditation.headspace]]"
-"###### My intention for the day:  "
-""
-"###### What can I today that future me would appreciate?"  
-""
-"###### How do I want to feel today?"  
-""
-"- Lunch"
-""
-"- Afternoon routine"
-""
-"- [ ] Clean up dishes before dinner"
-""
-"- [ ] Clean up Kitchen after dinner, take out litter"
-"- [ ] Plug in electronics"
-"###### What am I thankful to have acoomplished today?""
-			]
-	 },
-}
+			"- [ ] Wake by **8: 30**  recall dreams "
+			"- [ ] [[habits.up]]"
+			"###### Today I am thankful for:  "
+			"$0"
+			""
+			""
+			"- [ ] Start egg"
+			"- [ ] Water bottles to desk"
+			"- [ ] Intense Activity"
+			"- [ ] [[Meditate|۞Emo.meditation.headspace]]"
+			"###### `My intention for the day:`  "
+			""
+			"###### `What can I today that future me would appreciate?`  "  
+			""
+			"###### `How do I want to feel today?`  "  
+			""
+			"- Lunch"
+			""
+			"- Afternoon routine"
+			""
+			"- [ ] Clean up dishes before dinner"
+			""
+			"- [ ] Clean up Kitchen after dinner, take out litter"
+			"- [ ] Plug in electronics"
+			"- [ ] Migrate [[-daily.journal]] to daily.journal.date
+			""
+			"###### What am I thankful to have acoomplished today?  "
+			""
+			""
+			"###### == Daily Log ==  "
+			""
+			""
+			"###### == Todos ==  "
+			""
+					]
+			},
+
+
+
+
+
+
+
+// end script
+
+
+	} 

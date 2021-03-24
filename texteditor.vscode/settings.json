@@ -1038,7 +1038,6 @@
 "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
 "workbench.statusBar.visible": false,
 "dendron.defaultJournalDateFormat": "y.MM.dd.ccc",
-"window.zoomLevel": 1,
 "editor.lineNumbers": "off",
 
 }
