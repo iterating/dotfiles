@@ -91,53 +91,74 @@
 		],
 		"description": "Strengths Weaknesses Opportuities Threats"
 	},
-// Journal
-		"journal":{
-			"body": [
-			"- [ ] Wake by **8: 30**  recall dreams "
-			"- [ ] [[habits.up]]"
-			"###### Today I am thankful for:  "
+// Diagrams
+	"d.td":{
+		"prefix": ["Diagram Top Down ↓"],
+		"body": [
+			"```mermaid"
+			"graph TD"
+			"$1 --- $2"
+			"$3"
+			"```"
 			"$0"
-			""
-			""
-			"- [ ] Start egg"
-			"- [ ] Water bottles to desk"
-			"- [ ] Intense Activity"
-			"- [ ] [[Meditate|۞Emo.meditation.headspace]]"
-			"###### `My intention for the day:`  "
-			""
-			"###### `What can I today that future me would appreciate?`  "  
-			""
-			"###### `How do I want to feel today?`  "  
-			""
-			"- Lunch"
-			""
-			"- Afternoon routine"
-			""
-			"- [ ] Clean up dishes before dinner"
-			""
-			"- [ ] Clean up Kitchen after dinner, take out litter"
-			"- [ ] Plug in electronics"
-			"- [ ] Migrate [[-daily.journal]] to daily.journal.date
-			""
-			"###### What am I thankful to have acoomplished today?  "
-			""
-			""
-			"###### == Daily Log ==  "
-			""
-			""
-			"###### == Todos ==  "
-			""
-					]
-			},
+		]
+		"description": ["Diagram Top Down ↓"],
+	},
+	"d.lr": {
+		"prefix": [
+			"Diagram Left Right →"
+		],
+		"body": [
+			"```mermaid"
+			"graph LR"
+			"$1 --- $2"
+			"$3"
+			"```"
+			"$0"
+		]
+		"description": [
+			"Diagram Left Right →"
+		],
+	},
+// Journal
+	"journal":{
+		"body": [
+		"- [ ] Wake by **8: 30**  recall dreams "
+		"- [ ] [[habits.up]]"
+		"###### Today I am thankful for:  "
+		"$0"
+		""
+		""
+		"- [ ] Start egg"
+		"- [ ] Water bottles to desk"
+		"- [ ] Intense Activity"
+		"- [ ] [[Meditate|۞Emo.meditation.headspace]]"
+		"###### `My intention for the day:`  "
+		""
+		"###### `What can I today that future me would appreciate?`  "  
+		""
+		"###### `How do I want to feel today?`  "  
+		""
+		"- Lunch"
+		""
+		"- Afternoon routine"
+		""
+		"- [ ] Clean up dishes before dinner"
+		""
+		"- [ ] Clean up Kitchen after dinner, take out litter"
+		"- [ ] Plug in electronics"
+		"- [ ] Migrate [[-daily.journal]] to daily.journal.date
+		""
+		"###### What am I thankful to have accomplished today?  "
+		""
+		""
+		"###### == Daily Log ==  "
+		""
+		""
+		"###### == Todos ==  "
+		""
+		]
+	},
 
-
-
-
-
-
-
-// end script
-
-
+// end code
 	} 

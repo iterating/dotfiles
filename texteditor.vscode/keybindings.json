@@ -74,7 +74,7 @@
         "when": "editorTextFocus && !editorReadonly && !suggestWidgetVisible && editorLangId == 'markdown'"
     },
     {
-        "key": "ctrl+shift+up",
+        "key": "shift+alt+up",
         "command": "markdown.extension.onMoveLineUp",
         "when": "editorTextFocus && !editorReadonly && !suggestWidgetVisible && editorLangId == 'markdown'"
     },

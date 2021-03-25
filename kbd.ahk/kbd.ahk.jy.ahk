@@ -17,7 +17,6 @@ SetTitleMatchMode, 2 ; Title can be part of the full title
 		Send, %A_Hour%:%A_Min%
 		Return
 
-
 	;// symbols.common
 		::;star::
 			Send {U+2730} ;✰
@@ -34,29 +33,38 @@ SetTitleMatchMode, 2 ; Title can be part of the full title
 		::;android::
 			Send {U+0D60} ;ൠ
 			return
-		;//End symbols.common
 
 	;//characters.singlechord
 	 	$+#/::Send {U+241}	;	Question mark Ɂ
-		$+#up::Send {U+2191}	;	↑
-		$+#right::Send {U+2192}	;	→
-		$+#down::Send {U+2193}	;	↓
-		$+#left::Send {U+2190}	;	←
+		;//characters.arrows
+			$+#up::Send {U+2191}	;	↑
+			$+#right::Send {U+2192}	;	→
+			$+#down::Send {U+2193}	;	↓
+			$+#left::Send {U+2190}	;	←
+			$+#i::Send {U+2191}	;	↑
+			$+#l::Send {U+2192}	;	→
+			$+#k::Send {U+2193}	;	↓
+			$+#j::Send {U+2190}	;	←
 
 		$+#;::Send {U+FF1A}	;	full width colon "："
 		$+#'::Send {U+2033}	;	Quote ″
-		;//end characters.singlechord
 
 	;//symbols.logic
 		$+#\::Send {U+00AC}	;	¬ ;not 
 		$+#=::Send {U+2227}	; ∧ and
-		$+!=::Send {U+21D4}	;	⇔
-		::;=>:: ; ⇒ : 
+		$+!=::Send {U+21D4}	;	⇔ 
+		::;=l::		 ;  ⇒ : implies
 			Send {U+21D2}
-			return 
-		::;<=:: ; ⇐ :
-				Send {U+21D0}
-				return
+			return
+		::;=k::	 	; ⇓
+			Send {U+21D3}
+			return
+		::;=j:: 		; ⇐
+			Send {U+21D0}
+			return
+		::;=i:: 		; ⇑ 
+			Send {U+21D1}
+			return
 		::;then::		; ⤷ : then
 			Send {U+2937}
 			return
@@ -78,13 +86,13 @@ SetTitleMatchMode, 2 ; Title can be part of the full title
 		::;npr::	; ⊬ : Does not prove
 			Send {U+22AC}	
 			return
-		::;models::	; ⊧ : Models
+		::;models::		; ⊧ : Models
 			Send {U+22A7}	
 			Return
 		::;map::			; ⊡ : Maps to
 			Send {U+22A1}
 			Return
-		::;and:: ; ∧ : And
+		::;and::	 ; ∧ : And
 			Send {U+2227}
 			Return
 		::;or::		; ∨ : Or
@@ -93,7 +101,7 @@ SetTitleMatchMode, 2 ; Title can be part of the full title
 		::;union::	; ∪ : Union
 			Send {U+222A} 
 			Return
-		::;intersection::		  ;∩ : Intersection
+		::;intersect::	  ;∩ : Intersection
 			Send {U+2229}
 			Return
 		::;prop::		; ∝ : proportional to
@@ -123,22 +131,21 @@ SetTitleMatchMode, 2 ; Title can be part of the full title
 		::;==::		 ; ≘ : corresponds to
 			Send {U+2258}
 			Return
-		::;btwn:: 		; ≬ : between
+		::;bwn:: 		; ≬ : between
 			Send {U+226C} 
 			Return
 		::;sine:: 		 ; ∿: sine wave
 			Send {U+223F}
 			Return
-		::;delt::			 ; Δ : change
+		::;;cg::			 ; Δ : change
 			Send {U+0394}
 			Return
-		::;p1::				; ⎇ : path1
+		::;-p1::				; ⎇ : path1
 			Send {U+2387} 
 			Return
-		::;p2::			 ; ⌥ : path2
+		::;-p2::			 ; ⌥ : path2
 			Send {U+2325}
 			Return
-		;//end symbols.logic
 
 	;//⊞.anchors
 		::;topanc:: 	;  ⸗ : Top anchor
@@ -147,7 +154,7 @@ SetTitleMatchMode, 2 ; Title can be part of the full title
 	 	::;botanc:: 		; ι : Bottom anchor
 			Send {U+03B9}
 			return
-		;//end ⊞.anchors
+
 		Flashtext:  
 			SplashTextOn , 200, 0, Autohotkey replaced,
 			sleep,500
@@ -173,7 +180,6 @@ SetTitleMatchMode, 2 ; Title can be part of the full title
 		:*:;reference::
 			Send {U+03B9}{U+2754} 
 			return
-		;//end ⊞.para
 
 
 	;//OFF CapsLock switches to last app

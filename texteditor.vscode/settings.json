@@ -1037,7 +1037,7 @@
 "dendron.defaultScratchName": "-daily.quicknote",
 "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
 "workbench.statusBar.visible": false,
-"dendron.defaultJournalDateFormat": "y.MM.dd.ccc",
+"dendron.defaultJournalDateFormat": "y.MM.ddccc",
 "editor.lineNumbers": "off",
 
 }
