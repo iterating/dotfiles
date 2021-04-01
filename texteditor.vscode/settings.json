@@ -790,7 +790,6 @@
 	"scm.diffDecorations": "minimap",
 	"scm.diffDecorationsGutterVisibility": "hover",
 	"gutterpreview.imagePreviewMaxHeight": 500,
-	"window.titleBarStyle": "native",
 	"MarkdownPaste.silence": true,
 	"explorer.confirmDelete": false,
 	"editor.mouseWheelZoom": true,
@@ -865,7 +864,6 @@
 	// from any word in open document when turned on, which
 	// can be a little distracting in markdown docs:
 	"editor.wordBasedSuggestions": false,
-	"editor.tabSize": 2,
 	// Set this to false if you turn on quickSuggestions
 	// but don't want suggestions for markdown related snippets
 	// as you type:
@@ -876,6 +874,7 @@
 	"gutterpreview.sourceFolder": "./assets",
 	"pasteImage.path": "${currentFileDir}/assets/",
 "workbench.editorAssociations": [
+
 	{
 		"viewType": "default",
 		"filenamePattern": "*.md"
@@ -1013,7 +1012,6 @@
 		"overviewRulerColor": ""
 	}
 },
-"workbench.colorTheme": "GitHub Light",
 "editor.wordWrapColumn": 72,
 "dendron.defaultScratchDateFormat": "y.MM.dd.HHmm",
 "markdown.preview.fontSize": 18,
@@ -1037,7 +1035,9 @@
 "dendron.defaultScratchName": "-daily.quicknote",
 "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
 "workbench.statusBar.visible": false,
-"dendron.defaultJournalDateFormat": "y.MM.ddccc",
+"dendron.defaultJournalDateFormat": "y.MM.dd-ccc",
 "editor.lineNumbers": "off",
+"workbench.colorTheme": "GitHub Light",
+"diffEditor.wordWrap": "on",
 
 }

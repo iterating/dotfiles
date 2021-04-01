@@ -17,22 +17,33 @@
 	"fold.selected": {
 		"body":
 				["<details><summary>$1",
-					"  </summary>",
-					"  ${TM_SELECTED_TEXT}",
-					"  </details>",
-					"$0"],
-					"description": "Creates a toggle fold on the selection"
+				"  </summary>",
+				"  ${TM_SELECTED_TEXT}",
+				"  </details>",
+				"$0"],
+				"description": "Creates a toggle fold on the selection"
 				},
 	"fold.new": {
 		"body":
-		["<details><summary>$1",
-			"  </summary>",
-			"  $2",
-			"  </details>",
-			"  $0"],
-			"description": "Creates a new toggle fold"
+		["<details><summary>${TM_SELECTED_TEXT}$1",
+		"  </summary>",
+		"  $2",
+		"  </details>",
+		"  $0"],
+		"description": "Creates a new toggle fold"
 		},
-	// Markdown text formatting
+	// Markdown text formatting		
+	"table":{
+		"prefix": ["Table"],
+		"body": [
+			""
+			".	| . "
+			"-|-"
+			" ${TM_SELECTED_TEXT}$1 | $2 "
+			"$0"
+		],
+		"description": "Table"
+		},
 		"pagebreak": {
 			"prefix" : ["Page Break"],
 			"body": " <div style="page-break-after: always"></div> ",
@@ -46,28 +57,21 @@
 		"sub": {
 			"prefix": ["subscript"],
 			"body": [
-				"<sub>$1 </sub> $0",
+				"<sub>$1 ${TM_SELECTED_TEXT}</sub> $0",
 			],
 			"description": "Subscript"
 		},
 		"super": {
 			"prefix": ["superscript"],
 			"body": [
-				"<sup>$1 </sup> $0",
+				"<sup>$1 ${TM_SELECTED_TEXT}</sup> $0",
 			],
 			"description": "Superscript"
 		},
-		"md.table":{
-			"body": [
-				"$1| $2"
-				"-|-"
-				" $3 | $4 "
-				"$0"
-			],
-		},
+
 		"kbd": {
 			"prefix" : ["kbd"],
-			"body": ["<kbd>$1</kbd> $0"],
+			"body": ["<kbd>$1${TM_SELECTED_TEXT}</kbd> $0"],
 			"description": "type a Keyboard button"
 		},
 // Thinking templates
@@ -92,7 +96,7 @@
 		"description": "Strengths Weaknesses Opportuities Threats"
 	},
 // Diagrams
-	"d.td":{
+	"d.td":{ //basic top→down
 		"prefix": ["Diagram Top Down ↓"],
 		"body": [
 			"```mermaid"
@@ -101,13 +105,11 @@
 			"$3"
 			"```"
 			"$0"
-		]
+		],
 		"description": ["Diagram Top Down ↓"],
 	},
-	"d.lr": {
-		"prefix": [
-			"Diagram Left Right →"
-		],
+	"d.lr": {		// Basic Left→Right
+		"prefix": ["Diagram Left Right →"],
 		"body": [
 			"```mermaid"
 			"graph LR"
@@ -115,11 +117,10 @@
 			"$3"
 			"```"
 			"$0"
-		]
-		"description": [
-			"Diagram Left Right →"
 		],
+		"description": ["Diagram Left Right →"],
 	},
+
 // Journal
 	"journal":{
 		"body": [

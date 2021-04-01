@@ -74,11 +74,6 @@
         "when": "editorTextFocus && !editorReadonly && !suggestWidgetVisible && editorLangId == 'markdown'"
     },
     {
-        "key": "shift+alt+up",
-        "command": "markdown.extension.onMoveLineUp",
-        "when": "editorTextFocus && !editorReadonly && !suggestWidgetVisible && editorLangId == 'markdown'"
-    },
-    {
         "key": "alt+up",
         "command": "-markdown.extension.onMoveLineUp",
         "when": "editorTextFocus && !editorReadonly && !suggestWidgetVisible && editorLangId == 'markdown'"
@@ -122,11 +117,6 @@
         "key": "alt+down",
         "command": "-notebook.cell.moveDown",
         "when": "notebookEditorFocused && !inputFocus"
-    },
-    {
-        "key": "shift+alt+down",
-        "command": "markdown.extension.onMoveLineDown",
-        "when": "editorTextFocus && !editorReadonly && !suggestWidgetVisible && editorLangId == 'markdown'"
     },
     {
         "key": "alt+down",

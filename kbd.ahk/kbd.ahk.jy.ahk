@@ -15,55 +15,74 @@ SetTitleMatchMode, 2 ; Title can be part of the full title
 	
 	::;ttt:: ;// timestamp
 		Send, %A_Hour%:%A_Min%
-		Return
-
-	;// symbols.common
-		::;star::
-			Send {U+2730} ;✰
-			return
-		::;org::
-			Send {U+229E} ;⊞
-			return
-		::;well::
-			Send {U+06DE} ;۞
-			return
-		::;comm::
-			Send {U+260F} ;☏
-			return
-		::;android::
-			Send {U+0D60} ;ൠ
-			return
+		return
+		::;ddd:: ;// datestamp
+		Send, %A_MM%.%A_DD%-%A_DDD%
+		return
 
 	;//characters.singlechord
 	 	$+#/::Send {U+241}	;	Question mark Ɂ
 		;//characters.arrows
-			$+#up::Send {U+2191}	;	↑
-			$+#right::Send {U+2192}	;	→
-			$+#down::Send {U+2193}	;	↓
-			$+#left::Send {U+2190}	;	←
-			$+#i::Send {U+2191}	;	↑
+			$+#right::Send {U+21D2}		;	⇒
+			$+#down::Send {U+21D3}	;		⇓
+			$+#left::Send {U+21D0}	; ⇐
+			$+#up::Send {U+21D1}	;	⇑
 			$+#l::Send {U+2192}	;	→
 			$+#k::Send {U+2193}	;	↓
 			$+#j::Send {U+2190}	;	←
+			$+#i::Send {U+2191}	;	↑
+			::;inc::		;	↗
+				Send {U+2197}
+				return
+			::;dec::		;	↘
+				Send {U+2198}
+				return
+			::;il::			; ↗
+				Send {U+2197}	
+				return
+				::;li::			; ↗
+					Send {U+2197}	
+					return
+			::;kl::			;	↘
+				Send {U+2198}
+				return
+				::;lk::		;		↘
+					Send {U+2198}
+					return
+			::;kj::			;	↙
+				Send {U+2199}
+				return
+				::;jk::			;	↙
+					Send {U+2199}
+					return
+			::;turnl::		; ↱
+				Send {U+21B1}
+				return
+			::;turnj:: 	;		↰
+				Send {U+21B0}
+				return
+			$+!=::Send {U+21D4}		;		⇔ 
+			::;=l::		 ;  ⇒ : implies
+				Send {U+21D2}
+				return
+			::;=k::	 	; ⇓
+				Send {U+21D3}
+				return
+			::;=j:: 		; ⇐
+				Send {U+21D0}
+				return
+			::;=i:: 		; ⇑ 
+				Send {U+21D1}
+				return
+
 
 		$+#;::Send {U+FF1A}	;	full width colon "："
 		$+#'::Send {U+2033}	;	Quote ″
 
 	;//symbols.logic
-		$+#\::Send {U+00AC}	;	¬ ;not 
-		$+#=::Send {U+2227}	; ∧ and
-		$+!=::Send {U+21D4}	;	⇔ 
-		::;=l::		 ;  ⇒ : implies
-			Send {U+21D2}
-			return
-		::;=k::	 	; ⇓
-			Send {U+21D3}
-			return
-		::;=j:: 		; ⇐
-			Send {U+21D0}
-			return
-		::;=i:: 		; ⇑ 
-			Send {U+21D1}
+		$+#\::Send {U+00AC}		;	¬	:	not 
+		::;n::		; ¬	: not
+			Send {U+00AC}
 			return
 		::;then::		; ⤷ : then
 			Send {U+2937}
@@ -88,69 +107,82 @@ SetTitleMatchMode, 2 ; Title can be part of the full title
 			return
 		::;models::		; ⊧ : Models
 			Send {U+22A7}	
-			Return
+			return
 		::;map::			; ⊡ : Maps to
 			Send {U+22A1}
-			Return
-		::;and::	 ; ∧ : And
-			Send {U+2227}
-			Return
-		::;or::		; ∨ : Or
-			Send {U+2228} 
-			Return
-		::;union::	; ∪ : Union
-			Send {U+222A} 
-			Return
-		::;intersect::	  ;∩ : Intersection
-			Send {U+2229}
-			Return
-		::;prop::		; ∝ : proportional to
-			Send {U+221D}	
-			Return
+			return
 		::;it::			; ↬ : iterate
 			Send {U+21AC}
-			Return
+			return
+		$+#=::Send {U+2227}		; ∧ : And
+		::;and::	 ; ∧ : And
+			Send {U+2227}
+			return
+		::;or::		; ∨ : Or
+			Send {U+2228} 
+			return
+		::;union::	; ∪ : Union
+			Send {U+222A} 
+			return
+		::;intersect::	  ;∩ : Intersection
+			Send {U+2229}
+			return
+		::;prop::		; ∝ : proportional to
+			Send {U+221D}	
+			return
 		::;||::			 ; ∥ : parrelels
 			Send {U+2225}
-			Return
+			return
 		::;n||::		 ; ∦ ; does not parrelel
 			Send {U+2226}
-			Return
+			return
 		::;[::			 ; ⊂ : subset of
 			Send {U+2282}
-			Return
+			return
 		::;]::			 ; ⊃ : superset of
 			Send {U+2283}
-			Return
+			return
 		::;-::		 ; ⋈ : Relation
 			Send {U+22C8}
-			Return
+			return
 		::;=::		 ;≈ : almost equal
 			Send {U+2248}
-			Return
+			return
 		::;==::		 ; ≘ : corresponds to
 			Send {U+2258}
-			Return
+			return
 		::;bwn:: 		; ≬ : between
 			Send {U+226C} 
-			Return
+			return
 		::;sine:: 		 ; ∿: sine wave
 			Send {U+223F}
-			Return
-		::;;cg::			 ; Δ : change
+			return
+		::;cg::			 ; Δ : change
 			Send {U+0394}
-			Return
+			return
+		; - [ ] ⨹ U+2A39 ⨺U+2A3A
+		::;dt::			 ; Δ : delta
+			Send {U+0394}
+			return
 		::;-p1::				; ⎇ : path1
 			Send {U+2387} 
-			Return
+			return
 		::;-p2::			 ; ⌥ : path2
 			Send {U+2325}
-			Return
+			return
 
+	;//symbols.tech
+		::;android::		;	ൠ
+			Send {U+0D60}
+			return
+	;//symbols.dent.dat.chem
+		::;e-:: ; electron
+			Send e<sup>-</sup>
+			return
 	;//⊞.anchors
 		::;topanc:: 	;  ⸗ : Top anchor
 			Send {U+2E17}
-			Return
+			return
 	 	::;botanc:: 		; ι : Bottom anchor
 			Send {U+03B9}
 			return
@@ -162,22 +194,43 @@ SetTitleMatchMode, 2 ; Title can be part of the full title
 			return
 
 	;//⊞.para
-		:*:;today::
+		:*:;today::		;		!ⰰToday
 			Send +1{U+2C30} 
 			return
-		:*:;projects::
+		:*:;projects::		;		!ⰱ		
 			Send +1{U+2C31} 
 			return
-		:*:;areas::
+		:*:;areas::		;		!ⰲ
 			Send +1{U+2C32}
 			return
-		:*:;resources::
+
+			::;well::		;		۞		: 	 wellness
+				Send {U+06DE} 
+				return
+			::;star::		;		✰		: 		study
+				Send {U+2730} 
+				return
+			::;org::		;		⊞		:			organize
+				Send {U+229E}
+				return
+			::;fin::		; 	¤		:		2.3		:			 finanical
+				Send {U+00A4}
+				return
+			::;comm::		;		☏		:		 communication
+				Send {U+260F}
+				return
+
+		:*:;resources::			; 	!ⰳ		
 			Send +1{U+2C33}
 			return
-		:*:;archive::
+
+			::;disc:: 	;		Ꙫ		:		3.3		:		 discover
+				Send {U+A66A}
+				return
+		:*:;archive::			; !ⰴ
 			Send +1{U+2C34}
 			return
-		:*:;reference::
+		:*:;reference::		;		ι❔
 			Send {U+03B9}{U+2754} 
 			return
 
@@ -298,7 +351,7 @@ SetTitleMatchMode, 2 ; Title can be part of the full title
 					Send, {Ctrl Down}a{Ctrl Up}
 					sleep, 100
 					Send, {Ctrl Down}x{Ctrl Up}
-					Return
+					return
 			;// End Onenote.shared
 		#If
 		;// End Onenote.UWP
