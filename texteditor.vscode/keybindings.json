@@ -793,16 +793,6 @@
         "when": "editorTextFocus && !editorReadonly"
     },
     {
-        "key": "shift+alt+right",
-        "command": "markdown.extension.onIndentLines",
-        "when": "editorTextFocus && !suggestWidgetVisible && editorLangId == 'markdown'"
-    },
-    {
-        "key": "shift+alt+left",
-        "command": "markdown.extension.onOutdentLines",
-        "when": "editorTextFocus && !suggestWidgetVisible && editorLangId == 'markdown'"
-    },
-    {
         "key": "shift+alt+up",
         "command": "editor.action.moveLinesUpAction",
         "when": "editorTextFocus && !editorReadonly"

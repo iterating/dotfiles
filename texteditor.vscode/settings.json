@@ -853,7 +853,6 @@
 	"customizeUI.activityBar": "bottom",
 	"customizeUI.titleBar": "inline",
 	"customizeUI.activityBarHideSettings": true,
-	"editor.foldingStrategy": "indentation",
 	"sync.removeExtensions": false,
 	"scm.diffDecorationsGutterWidth": 1,
 	"gutterpreview.showImagePreviewOnGutter": false,
@@ -872,7 +871,6 @@
 	"terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
 	"sync.syncExtensions": true,
 	"gutterpreview.sourceFolder": "./assets",
-	"pasteImage.path": "${currentFileDir}/assets/",
 "workbench.editorAssociations": [
 
 	{
@@ -931,7 +929,6 @@
 "editor.lineHeight": 32,
 "workbench.sideBar.location": "left",
 "pasteImage.defaultName": "${currentFileNameWithoutExt}-ms",
-"pasteImage.prefix": "./",
 "customizeUI.fontSizeMap": {
 	"13px": "16px",
 	"monospace": "16px",
@@ -954,7 +951,7 @@
 	".monaco-pane-view .pane>.pane-header h3.title": "font-weight: 100 !important; text-transform: lowercase; font-size: 14px;  font-family: calibri;",
 },
 "editor.minimap.maxColumn": 30,
-"editor.fontFamily": "Segoe UI",
+"editor.fontFamily": "-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;",
 "files.autoSave": "onFocusChange",
 "calendar.google.credentialsFile": "D:\\Dropbox\\tech\\tech.LifeOS\\integration.gCal\\credentials.json",
 "hediet.vscode-drawio.local-storage": "eyIuZHJhd2lvLWNvbmZpZyI6IntcImxhbmd1YWdlXCI6XCJcIixcImN1c3RvbUZvbnRzXCI6W10sXCJsaWJyYXJpZXNcIjpcImdlbmVyYWxcIixcImN1c3RvbUxpYnJhcmllc1wiOltcIkwuc2NyYXRjaHBhZFwiXSxcInBsdWdpbnNcIjpbXSxcInJlY2VudENvbG9yc1wiOltdLFwiZm9ybWF0V2lkdGhcIjowLFwiY3JlYXRlVGFyZ2V0XCI6ZmFsc2UsXCJwYWdlRm9ybWF0XCI6e1wieFwiOjAsXCJ5XCI6MCxcIndpZHRoXCI6ODUwLFwiaGVpZ2h0XCI6MTEwMH0sXCJzZWFyY2hcIjp0cnVlLFwic2hvd1N0YXJ0U2NyZWVuXCI6dHJ1ZSxcImdyaWRDb2xvclwiOlwiI2QwZDBkMFwiLFwiZGFya0dyaWRDb2xvclwiOlwiIzZlNmU2ZVwiLFwiYXV0b3NhdmVcIjp0cnVlLFwicmVzaXplSW1hZ2VzXCI6bnVsbCxcIm9wZW5Db3VudGVyXCI6MCxcInZlcnNpb25cIjoxOCxcInVuaXRcIjoxLFwiaXNSdWxlck9uXCI6ZmFsc2UsXCJ1aVwiOlwiXCJ9In0=",
@@ -967,6 +964,7 @@
 "markdown-header-coloring.textDecoration": "",
 "markdown-header-coloring.backgroundColorOpacity": 0,
 "markdown-header-coloring.colormapConfig": {
+	
 
 
 	"colormap": "hsv",
@@ -1039,5 +1037,88 @@
 "editor.lineNumbers": "off",
 "workbench.colorTheme": "GitHub Light",
 "diffEditor.wordWrap": "on",
+"highlight.regexes": {
+	"((?:<!-- *)?(?:#|// @|//|./\\*+|<!--|--|\\* @|{!|{{!--|{{!) *TODO(?:\\s*\\([^)]+\\))?:?)((?!\\w)(?: *-->| *\\*/| *!}| *--}}| *}}|(?= *(?:[^:]//|/\\*+|<!--|@|--|{!|{{!--|{{!))|(?: +[^\\n@]*?)(?= *(?:[^:]//|/\\*+|<!--|@|--(?!>)|{!|{{!--|{{!))|(?: +[^@\\n]+)?))": {
+		"filterFileRegex": ".*(?<!CHANGELOG.md)$",
+		"decorations": [
+			{
+				"overviewRulerColor": "#ffcc00",
+				"backgroundColor": "#ffcc00",
+				"color": "#1f1f1f",
+				"fontWeight": "bold"
+			},
+			{
+				"backgroundColor": "#ffcc00",
+				"color": "#1f1f1f"
+			}
+		]
+	},
+	"((?:<!-- *)?(?:#|// @|//|./\\*+|<!--|--|\\* @|{!|{{!--|{{!) *(?:FIXME|FIX|BUG|UGLY|DEBUG|HACK)(?:\\s*\\([^)]+\\))?:?)((?!\\w)(?: *-->| *\\*/| *!}| *--}}| *}}|(?= *(?:[^:]//|/\\*+|<!--|@|--|{!|{{!--|{{!))|(?: +[^\\n@]*?)(?= *(?:[^:]//|/\\*+|<!--|@|--(?!>)|{!|{{!--|{{!))|(?: +[^@\\n]+)?))": {
+		"filterFileRegex": ".*(?<!CHANGELOG.md)$",
+		"decorations": [
+			{
+				"overviewRulerColor": "#cc0000",
+				"backgroundColor": "#cc0000",
+				"color": "#1f1f1f",
+				"fontWeight": "bold"
+			},
+			{
+				"backgroundColor": "#cc0000",
+				"color": "#1f1f1f"
+			}
+		]
+	},
+	"((?:<!-- *)?(?:#|// @|//|./\\*+|<!--|--|\\* @|{!|{{!--|{{!) *(?:REVIEW|OPTIMIZE|TSC)(?:\\s*\\([^)]+\\))?:?)((?!\\w)(?: *-->| *\\*/| *!}| *--}}| *}}|(?= *(?:[^:]//|/\\*+|<!--|@|--|{!|{{!--|{{!))|(?: +[^\\n@]*?)(?= *(?:[^:]//|/\\*+|<!--|@|--(?!>)|{!|{{!--|{{!))|(?: +[^@\\n]+)?))": {
+		"filterFileRegex": ".*(?<!CHANGELOG.md)$",
+		"decorations": [
+			{
+				"overviewRulerColor": "#00ccff",
+				"backgroundColor": "#00ccff",
+				"color": "#1f1f1f",
+				"fontWeight": "bold"
+			},
+			{
+				"backgroundColor": "#00ccff",
+				"color": "#1f1f1f"
+			}
+		]
+	},
+	"((?:<!-- *)?(?:#|// @|//|./\\*+|<!--|--|\\* @|{!|{{!--|{{!) *(?:IDEA)(?:\\s*\\([^)]+\\))?:?)((?!\\w)(?: *-->| *\\*/| *!}| *--}}| *}}|(?= *(?:[^:]//|/\\*+|<!--|@|--|{!|{{!--|{{!))|(?: +[^\\n@]*?)(?= *(?:[^:]//|/\\*+|<!--|@|--(?!>)|{!|{{!--|{{!))|(?: +[^@\\n]+)?))": {
+		"filterFileRegex": ".*(?<!CHANGELOG.md)$",
+		"decorations": [
+			{
+				"overviewRulerColor": "#cc00cc",
+				"backgroundColor": "#cc00cc",
+				"color": "#1f1f1f",
+				"fontWeight": "bold"
+			},
+			{
+				"backgroundColor": "#cc00cc",
+				"color": "#1f1f1f"
+			}
+		]
+	}
+},
+"editor.tabSize": 2,
+"pasteImage.prefix": "./assets/",
+"pasteImage.path": "${currentFileDir}/assets",
+"pasteImage.basePath": "${currentFileDir}/assets",
+"vscode-nested-tags.additionalFileTypes": [
+
+],
+"markdown-preview-enhanced.codeBlockTheme": "atom-light.css",
+"markdown-preview-enhanced.enableExtendedTableSyntax": true,
+"markdown-preview-enhanced.mathBlockDelimiters": [
+
+	[
+		"$$",
+		"$$"
+	],
+	[
+		"\\[",
+		"\\]"
+	]
+],
+"window.zoomLevel": -1,
 
 }
