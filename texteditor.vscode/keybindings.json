@@ -4,7 +4,7 @@
 // For Dendron
 
 {
-        "key": "ctrl+shift+3",
+        "key": "ctrl+3",
         "command": "editor.action.insertSnippet",
         "when": "editorHasMultipleSelections || editorHasSelection",
         "args": {
@@ -801,5 +801,9 @@
         "key": "alt+up",
         "command": "-editor.action.moveLinesUpAction",
         "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+3",
+        "command": "-workbench.action.focusThirdEditorGroup"
     }
 ]

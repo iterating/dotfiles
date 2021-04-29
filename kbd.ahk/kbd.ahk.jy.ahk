@@ -12,6 +12,7 @@ SetTitleMatchMode, 2 ; Title can be part of the full title
 	F18::Send #4 	; Foot pedals{1 2 3}→{F18 F19 F20}
 	F19::Send #5
 	F20::Send #6
+	#/::Winset, Alwaysontop, , A ; keep window on top
 	
 	::;ttt:: ;// timestamp
 		Send, %A_Hour%:%A_Min%
@@ -43,35 +44,41 @@ SetTitleMatchMode, 2 ; Title can be part of the full title
 				::;li::			; ↗
 					Send {U+2197}	
 					return
-			::;kl::			;	↘
+			::;kl::			;		↘
 				Send {U+2198}
 				return
 				::;lk::		;		↘
 					Send {U+2198}
 					return
-			::;kj::			;	↙
+			::;kj::			;		↙
 				Send {U+2199}
 				return
-				::;jk::			;	↙
+				::;jk::			;		↙
 					Send {U+2199}
 					return
-			::;turnl::		; ↱
+			::;turnl::		;	 	↱
 				Send {U+21B1}
 				return
-			::;turnj:: 	;		↰
+			::;turnj:: 		;		↰
 				Send {U+21B0}
 				return
-			$+!=::Send {U+21D4}		;		⇔ 
-			::;=l::		 ;  ⇒ : implies
+			::;retl::		;		↳ 
+				Send {U+21B3}
+				return
+			::;retj:: 		;		↲
+				Send {U+21B2}
+				return
+			$+!=::Send {U+21D4}			;		⇔ 
+			::;=l::		 ;  	⇒ : implies
 				Send {U+21D2}
 				return
-			::;=k::	 	; ⇓
+			::;=k::	 	; 	⇓
 				Send {U+21D3}
 				return
-			::;=j:: 		; ⇐
+			::;=j:: 		;	 ⇐
 				Send {U+21D0}
 				return
-			::;=i:: 		; ⇑ 
+			::;=i:: 		; 	⇑ 
 				Send {U+21D1}
 				return
 
@@ -171,8 +178,15 @@ SetTitleMatchMode, 2 ; Title can be part of the full title
 			Send {U+2325}
 			return
 
+	;//symbols.stats
+	::;std::			;		σ
+			Send {U+03C3}
+		return
+	::;mean::		;		μ
+			Send {U+03BC}
+		return
 	;//symbols.tech
-		::;android::		;	ൠ
+		::;android::		;		ൠ
 			Send {U+0D60}
 			return
 	;//symbols.dent.dat.chem
@@ -212,6 +226,21 @@ SetTitleMatchMode, 2 ; Title can be part of the full title
 				return
 			::;org::		;		⊞		:			organize
 				Send {U+229E}
+				return
+			::;ing::	;	꣼
+				Send {U+A8FC}
+				return
+			::;meditate::	; 	꣼
+				Send {U+A8FC}
+				return
+			::;intense::	;	ꣶ
+				Send {U+A8F6}
+				return
+			::;cardio::	;	ꣵ ; look for a more differentiated symbol
+				Send {U+A8F5}
+				return
+			::;stretch::	;	ꣷ ; look for a more differentiated 
+				Send {U+A8F7}
 				return
 			::;fin::		; 	¤		:		2.3		:			 finanical
 				Send {U+00A4}
@@ -368,6 +397,7 @@ SetTitleMatchMode, 2 ; Title can be part of the full title
 				^+]:: Send, !+=
 			;// Ctrl+Shift+P→ command palette
 				^+p:: Send, {F1}
+
 			;// Indent
 				^]:: Send, `t
 				^[:: Send, +`t
