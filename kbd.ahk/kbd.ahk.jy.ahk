@@ -13,7 +13,7 @@ SetTitleMatchMode, 2 ; Title can be part of the full title
 	F19::Send #5
 	F20::Send #6
 	#/::Winset, Alwaysontop, , A ; keep window on top
-	
+		
 	::;ttt:: ;// timestamp
 		Send, %A_Hour%:%A_Min%
 		return
@@ -32,22 +32,29 @@ SetTitleMatchMode, 2 ; Title can be part of the full title
 			$+#k::Send {U+2193}	;	↓
 			$+#j::Send {U+2190}	;	←
 			$+#i::Send {U+2191}	;	↑
+		
+			::;jl::			; ⇄
+				Send {U+21C4}	
+				return
+			::;ik::			; ⇅
+				Send {U+21C5}	
+				return
 			::;inc::		;	↗
 				Send {U+2197}
 				return
-			::;dec::		;	↘
-				Send {U+2198}
-				return
-			::;il::			; ↗
-				Send {U+2197}	
-				return
+				::;il::			; ↗
+					Send {U+2197}	
+					return
 				::;li::			; ↗
 					Send {U+2197}	
 					return
-			::;kl::			;		↘
+			::;dec::		;	↘
 				Send {U+2198}
 				return
-				::;lk::		;		↘
+				::;kl::			;		↘
+					Send {U+2198}
+					return
+				::;lk::			;		↘
 					Send {U+2198}
 					return
 			::;kj::			;		↙
@@ -167,15 +174,30 @@ SetTitleMatchMode, 2 ; Title can be part of the full title
 		::;cg::			 ; Δ : change
 			Send {U+0394}
 			return
-		; - [ ] ⨹ U+2A39 ⨺U+2A3A
+		;  ⨹ U+2A39 ⨺U+2A3A
 		::;dt::			 ; Δ : delta
 			Send {U+0394}
 			return
-		::;-p1::				; ⎇ : path1
-			Send {U+2387} 
+		::;-p1::			
+			Send {U+2387}  	; 	⎇	 :	 path1
 			return
-		::;-p2::			 ; ⌥ : path2
-			Send {U+2325}
+		::;-p2::
+			Send {U+2325}	 ;	⌥	:	path2
+			return
+		::;req::
+			Send {U+22C9}	;	⋉	:	requires
+			return
+		::;opens::
+			Send {U+22CA}	;	⋊	:	opens up
+			return
+		::;reqf::
+			Send {U+29D4}	;	⧔	:	requirement(fulfilled)
+			return
+		::;opened::
+			Send {U+29D5}	;	⧕	:	opened up
+			return
+		::;depends::
+			Send {U+2A7C}	;	⩼	:	depends?
 			return
 
 	;//symbols.stats
@@ -193,6 +215,9 @@ SetTitleMatchMode, 2 ; Title can be part of the full title
 		::;e-:: ; electron
 			Send e<sup>-</sup>
 			return
+	::;benzene::
+		Send {U+232C}
+		return
 	;//⊞.anchors
 		::;topanc:: 	;  ⸗ : Top anchor
 			Send {U+2E17}
@@ -214,6 +239,33 @@ SetTitleMatchMode, 2 ; Title can be part of the full title
 		:*:;projects::		;		!ⰱ		
 			Send +1{U+2C31} 
 			return
+
+			::;y::
+				Send {U+25BD}	;	▽	:	;wy?
+				return
+			::;hw::
+				Send {U+21F4}	;	⇴	:	;how?
+				return
+			::;wr::
+				Send {U+2BD0}	;	⯐	:	where?
+				return
+			::;wn::
+				Send {U+25F7}	;	◷	:	when?
+				return
+
+			::;focus::
+				Send {U+2A15}	;	⨕	:	focus
+				return
+			::;see::
+				Send {U+2222}	;	∢	:	see
+				return
+			::;hear::
+				Send {U+2996}	;	⦖	:	hear
+				return
+			::;feel::
+				Send {U+2ADA}	;	⫚	:	feel
+				return
+
 		:*:;areas::		;		!ⰲ
 			Send +1{U+2C32}
 			return
@@ -224,14 +276,26 @@ SetTitleMatchMode, 2 ; Title can be part of the full title
 			::;star::		;		✰		: 		study
 				Send {U+2730} 
 				return
-			::;org::		;		⊞		:			organize
+			::;org::		;		⊞		:		organize
 				Send {U+229E}
 				return
-			::;ing::	;	꣼
-				Send {U+A8FC}
+			::;ing::	;	୭	: 	ing
+				Send {U+0B6D}
 				return
-			::;meditate::	; 	꣼
-				Send {U+A8FC}
+			::;meditate::	; 	୭	:	meditation
+				Send {U+0B6D}
+				return
+			::;quest::	;		꡵	:	quest
+				Send {U+A875}
+				return
+			::;intent::	
+				Send {U+A874}	;	꡴	:	intent
+				return
+			::;reward::
+				Send {U+058E}	;	֎	:	reward 
+				return
+			::;distraction::
+				Send {U+0F05}	;	༅	:	distraction
 				return
 			::;intense::	;	ꣶ
 				Send {U+A8F6}
@@ -242,11 +306,14 @@ SetTitleMatchMode, 2 ; Title can be part of the full title
 			::;stretch::	;	ꣷ ; look for a more differentiated 
 				Send {U+A8F7}
 				return
-			::;fin::		; 	¤		:		2.3		:			 finanical
+			::;fin::		; 	¤		:		2.3	: 	finanical
 				Send {U+00A4}
 				return
 			::;comm::		;		☏		:		 communication
 				Send {U+260F}
+				return
+			::;tea::
+				Send {U+2740}		;	❀	:	tea
 				return
 
 		:*:;resources::			; 	!ⰳ		
