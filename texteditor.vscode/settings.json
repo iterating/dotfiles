@@ -98,40 +98,39 @@
 },
 
 "markdown-header-coloring.userDefinedHeaderColor": {
-
 	"enabled": true,
 	"Header_1": {
-		"color": "#EF919B",
+		"color": "#F77B72",
 		"backgroundColor": "",
 		"textDecoration": "",
 		"overviewRulerColor": ""
 	},
 	"Header_2": {
-		"color": "#F8B392",
+		"color": "#9E82C3",
 		"backgroundColor": "",
 		"textDecoration": "",
 		"overviewRulerColor": ""
 	},
 	"Header_3": {
-		"color": "#A0CFA2",
+		"color": "#89B1DF",
 		"backgroundColor": "",
 		"textDecoration": "",
 		"overviewRulerColor": ""
 	},
 	"Header_4": {
-		"color": "#95D4D3",
+		"color": "#B2CD91",
 		"backgroundColor": "",
 		"textDecoration": "",
 		"overviewRulerColor": ""
 	},
 	"Header_5": {
-		"color": "#71BEE7",
+		"color": "#E6B8C8",
 		"backgroundColor": "",
 		"textDecoration": "",
 		"overviewRulerColor": ""
 	},
 	"Header_6": {
-		"color": "#8380B3",
+		"color": "#EBD9B6",
 		"backgroundColor": "",
 		"textDecoration": "",
 		"overviewRulerColor": ""

@@ -805,5 +805,14 @@
     {
         "key": "ctrl+3",
         "command": "-workbench.action.focusThirdEditorGroup"
+    },
+    {
+        "key": "ctrl+shift+e",
+        "command": "-workbench.action.quickOpenNavigatePreviousInFilePicker",
+        "when": "inFilesPicker && inQuickOpen"
+    },
+    {
+        "key": "ctrl+shift+e",
+        "command": "easy-highlight.RemoveHighlight"
     }
 ]

@@ -52,6 +52,12 @@ SetTitleMatchMode, 2 ; Title can be part of the full title
 			::;ninc::		;	⋪	:	not increase
 				Send {U+22EA}
 				return
+			::;high::
+				Send {U+154B}	;	ᕋ	:	high
+				return
+			::;low::
+				Send {U+154D}	;	ᕍ	:	low
+				return
 			::;il::			; ↗
 				Send {U+2197}	
 				return
@@ -317,14 +323,29 @@ SetTitleMatchMode, 2 ; Title can be part of the full title
 			::;org::
 				Send {U+229E}		;	⊞	:	organize
 				return
-			::;ing::
-				Send {U+0B6D	;	୭	: 	ing
-				return
 			::;meditate::
-				Send {U+0B6D}	; 	୭	:	meditation
+				Send {U+0FD3}	; 	࿓	:	meditation
 				return
+				::;ing::
+					Send {U+0FD3}	;	࿓	: 	aing
+					return
+			::;patient::
+				Send {U+0B6D}	;	୭	:	patience
+				return
+				::;pt::
+					Send {U+0B6D}	;	୭	:	patience
+					return
 			::;tf::
-				Send {U+0B70}	;	
+				Send {U+A598}	;	ꖘ	:	thankful
+				return
+				::;thankful::
+					Send {U+A598}	;	ꖘ	:	thankful
+					return
+				::;grateful::
+					Send {U+A598}	;	ꖘ	:	grateful
+					return
+			::;jy::
+				Send {U+0F13}	;	༓	;	jon young
 				return
 			::;quest::	
 				Send {U+A875}	;	꡵	:	quest
@@ -336,7 +357,10 @@ SetTitleMatchMode, 2 ; Title can be part of the full title
 				Send {U+058E}	;	֎	:	reward 
 				return
 			::;distraction::
-				Send {U+0F05}	;	༅	:	distraction
+				Send {U+0F6A}	;	ཪ	:	distraction
+				return
+			::;dc::
+				Send {U+0F6A}	;	ཪ	:	distraction
 				return
 			::;intense::
 				Send {U+A8F6}		;	ꣶ	:	intense workout
@@ -457,6 +481,9 @@ SetTitleMatchMode, 2 ; Title can be part of the full title
 			return
 		::;date:: ;// datestamp
 			Send, %A_MM%.%A_DD%-%A_DDD%	; date
+			return
+		::;etime::
+			Send {U+25D4}	;	◔	;	estimated time
 			return
 	
 	;// Onenote.UWP
