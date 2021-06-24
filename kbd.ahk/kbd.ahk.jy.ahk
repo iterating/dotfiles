@@ -248,6 +248,11 @@ SetTitleMatchMode, 2 ; Title can be part of the full title
 	  ::;rightangle::
 	  	Send {U+22BF}	;	⊿	:	right angle
 		return
+
+		::;sqrt::
+			Send {U+221A}	;	√	:	square roots
+			return
+			
 	;//symbols.tech
 		::;android::
 			Send {U+0D60}	;	android	:	ൠ
@@ -479,6 +484,9 @@ SetTitleMatchMode, 2 ; Title can be part of the full title
 		::;time:: 
 			Send, %A_Hour%:%A_Min%	; timestamp
 			return
+			::;t:: 
+				Send, %A_Hour%:%A_Min%	; timestamp
+				return
 		::;date:: ;// datestamp
 			Send, %A_MM%.%A_DD%-%A_DDD%	; date
 			return
