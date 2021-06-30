@@ -814,5 +814,9 @@
     {
         "key": "ctrl+shift+e",
         "command": "easy-highlight.RemoveHighlight"
+    },
+    {
+        "key": "ctrl+shift+d",
+        "command": "markdownDraw.editCurrentLineAsSVG"
     }
 ]

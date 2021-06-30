@@ -493,6 +493,9 @@ SetTitleMatchMode, 2 ; Title can be part of the full title
 		::;etime::
 			Send {U+25D4}	;	◔	;	estimated time
 			return
+			::;et::
+				Send {U+25D4}	;	◔	;	estimated time
+				return
 	
 	;// Onenote.UWP
 		#If WinActive("- OneNote ahk_class ApplicationFrameWindow", "OneNote")

@@ -159,6 +159,12 @@
 "dendron.defaultJournalName": "",
 "dendron.rootDir": ".",
 "kanban.time.dateformat": "MM.DD.HH:mm",
+"security.workspace.trust.untrustedFiles": "open",
+"editor.lineNumbers": "off",
+"dendron.defaultScratchAddBehavior": "childOfCurrent",
+"window.zoomLevel": -1,
+"easy-highlight.highlightColor": "#d5ff00",
+"dendron.defaultTimestampDecorationFormat": "DATETIME_SHORT",
 "highlight.regexes": {
 	"((?:<!-- *)?(?:#|// @|//|./\\*+|<!--|--|\\* @|{!|{{!--|{{!) *TODO(?:\\s*\\([^)]+\\))?:?)((?!\\w)(?: *-->| *\\*/| *!}| *--}}| *}}|(?= *(?:[^:]//|/\\*+|<!--|@|--|{!|{{!--|{{!))|(?: +[^\\n@]*?)(?= *(?:[^:]//|/\\*+|<!--|@|--(?!>)|{!|{{!--|{{!))|(?: +[^@\\n]+)?))": {
 		"filterFileRegex": ".*(?<!CHANGELOG.md)$",
@@ -221,9 +227,5 @@
 		]
 	}
 },
-"security.workspace.trust.untrustedFiles": "open",
-"editor.lineNumbers": "off",
-"dendron.defaultScratchAddBehavior": "childOfCurrent",
-"window.zoomLevel": -1,
-"easy-highlight.highlightColor": "#d5ff00",
+
 }
