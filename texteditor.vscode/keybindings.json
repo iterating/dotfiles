@@ -99,7 +99,7 @@
         "when": "editorTextFocus && !editorReadonly"
     },
     {
-        "key": "shift+alt+down",
+        "key": "alt+down",
         "command": "editor.action.moveLinesDownAction",
         "when": "editorTextFocus && !editorReadonly"
     },
@@ -360,7 +360,7 @@
         "command": "-workbench.action.keybindingsReference"
     },
     {
-        "key": "ctrl+k k",
+        "key": "ctrl+k space",
         "command": "workbench.action.openGlobalKeybindings"
     },
     {
@@ -541,10 +541,6 @@
         "when": "editorFocus"
     },
     {
-        "key": "alt+p",
-        "command": "dendron.showPreview"
-    },
-    {
         "key": "f2",
         "command": "-debug.renameWatchExpression",
         "when": "watchExpressionsFocused"
@@ -572,10 +568,6 @@
     {
         "key": "ctrl+f2",
         "command": "dendron.renameNote"
-    },
-    {
-        "key": "ctrl+shift+g",
-        "command": "dendron.showNoteGraph"
     },
     {
         "key": "ctrl+shift+g",
@@ -703,10 +695,6 @@
         "when": "inQuickOpen && inRecentFilesPicker"
     },
     {
-        "key": "ctrl+r g",
-        "command": "dendron.showSchemaGraph"
-    },
-    {
         "key": "ctrl+r f5",
         "command": "dendron.updateSchema"
     },
@@ -793,7 +781,7 @@
         "when": "editorTextFocus && !editorReadonly"
     },
     {
-        "key": "shift+alt+up",
+        "key": "alt+up",
         "command": "editor.action.moveLinesUpAction",
         "when": "editorTextFocus && !editorReadonly"
     },
@@ -816,7 +804,165 @@
         "command": "easy-highlight.RemoveHighlight"
     },
     {
+        "key": "ctrl+d",
+        "command": "markdownDraw.editCurrentLineAsSVG"
+    },
+    {
+        "key": "ctrl+shift+g",
+        "command": "dendron.showNoteGraphV2"
+    },
+    {
+        "key": "ctrl+r g",
+        "command": "dendron.showSchemaGraphV2"
+    },
+    {
+        "key": "alt+-",
+        "command": "-decreaseSearchEditorContextLines",
+        "when": "inSearchEditor"
+    },
+    {
+        "key": "alt+c",
+        "command": "md-shortcut.toggleCheckboxes",
+        "when": "editorTextFocus && markdownShortcuts:enabled"
+    },
+    {
+        "key": "ctrl+m ctrl+x",
+        "command": "-md-shortcut.toggleCheckboxes",
+        "when": "editorTextFocus && markdownShortcuts:enabled"
+    },
+    {
+        "key": "alt+f",
+        "command": "extension.googleSearch"
+    },
+    {
+        "key": "alt+s",
+        "command": "md-shortcut.toggleStrikethrough"
+    },
+    {
+        "key": "alt+b",
+        "command": "md-shortcut.toggleBullets",
+        "when": "editorTextFocus && markdownShortcuts:enabled"
+    },
+    {
+        "key": "ctrl+m ctrl+b",
+        "command": "-md-shortcut.toggleBullets",
+        "when": "editorTextFocus && markdownShortcuts:enabled"
+    },
+    {
+        "key": "alt+i",
+        "command": "md-shortcut.toggleItalic",
+        "when": "editorTextFocus && markdownShortcuts:enabled"
+    },
+    {
+        "key": "ctrl+i",
+        "command": "-md-shortcut.toggleItalic",
+        "when": "editorTextFocus && markdownShortcuts:enabled"
+    },
+    {
+        "key": "alt+up",
+        "command": "-workbench.action.terminal.focusPreviousPane",
+        "when": "terminalFocus && terminalProcessSupported"
+    },
+    {
+        "key": "alt+up",
+        "command": "-showPrevParameterHint",
+        "when": "editorFocus && parameterHintsMultipleSignatures && parameterHintsVisible"
+    },
+    {
+        "key": "alt+down",
+        "command": "-showNextParameterHint",
+        "when": "editorFocus && parameterHintsMultipleSignatures && parameterHintsVisible"
+    },
+    {
+        "key": "alt+down",
+        "command": "-scm.forceViewNextCommit",
+        "when": "scmRepository"
+    },
+    {
+        "key": "shift+alt+down",
+        "command": "editor.action.moveLinesDownAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "shift+alt+up",
+        "command": "editor.action.moveLinesUpAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+p",
+        "command": "-workbench.action.quickOpen"
+    },
+    {
+        "key": "ctrl+shift+p",
+        "command": "editor.action.peekDefinition",
+        "when": "editorHasDefinitionProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
+    },
+    {
+        "key": "alt+f12",
+        "command": "-editor.action.peekDefinition",
+        "when": "editorHasDefinitionProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
+    },
+    {
+        "key": "ctrl+i",
+        "command": "-editor.action.triggerSuggest",
+        "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+i",
+        "command": "dendron.insertNote"
+    },
+    {
+        "key": "ctrl+k k",
+        "command": "md-shortcut.toggleLink"
+    },
+    {
+        "key": "ctrl+1 1",
+        "command": "md-shortcut.toggleTitleH1"
+    },
+    {
+        "key": "ctrl+1 2",
+        "command": "md-shortcut.toggleTitleH2"
+    },
+    {
+        "key": "ctrl+1 3",
+        "command": "md-shortcut.toggleTitleH3"
+    },
+    {
+        "key": "ctrl+1 4",
+        "command": "md-shortcut.toggleTitleH4"
+    },
+    {
+        "key": "ctrl+1 5",
+        "command": "md-shortcut.toggleTitleH5"
+    },
+    {
+        "key": "ctrl+1 6",
+        "command": "md-shortcut.toggleTitleH6"
+    },
+    {
+        "key": "ctrl+shift+b",
+        "command": "md-shortcut.toggleBold",
+        "when": "editorTextFocus && markdownShortcuts:enabled"
+    },
+    {
+        "key": "ctrl+b",
+        "command": "-md-shortcut.toggleBold",
+        "when": "editorTextFocus && markdownShortcuts:enabled"
+    },
+    {
         "key": "ctrl+shift+d",
         "command": "markdownDraw.editCurrentLineAsSVG"
+    },
+    {
+        "key": "alt+p",
+        "command": "markdown-preview-enhanced.openPreviewToTheSide"
+    },
+    {
+        "key": "ctrl+p",
+        "command": "workbench.action.showCommands"
+    },
+    {
+        "key": "ctrl+shift+p",
+        "command": "-workbench.action.showCommands"
     }
 ]

@@ -9,9 +9,9 @@ SetTitleMatchMode, 2 ; Title can be part of the full title
 	F13::Send #1 ; sharpkeys::quicklaunch ; CapsL→F13→quicklaunch.#1
 	+F13:: Send #2
 	#F13:: Send #3
-	F18::Send #4 	; Foot pedals{1 2 3}→{F18 F19 F20}
-	F19::Send #5
-	F20::Send #6
+	; F18::Send #4 	; Foot pedals{1 2 3}→{F18 F19 F20}
+	; F19::Send #5
+	; F20::Send #6
 	#/::Winset, Alwaysontop, , A ; keep window on top
 
 	;//characters.singlechord
@@ -265,10 +265,10 @@ SetTitleMatchMode, 2 ; Title can be part of the full title
 		Send {U+23E3}
 		return
 	;//⊞.anchors
-		::;topanc::
+		::;top::
 			Send {U+2E17}	;	⸗	:	Top anchor
 			return
-	 	::;botanc::
+	 	::;bottom::
 			Send {U+03B9}		;	ι	:	Bottom anchor
 			return
 
@@ -285,7 +285,20 @@ SetTitleMatchMode, 2 ; Title can be part of the full title
 		:*:;projects::
 			Send +1{U+2C31}			;		!ⰱ		
 			return
-			
+		::;disc:: 
+			Send {U+A66A}		;	Ꙫ	:	3.3	discover
+			return
+		:*:;archive::
+				Send +1{U+2C34}		;	!ⰴ
+				return
+		:*:;reference::	
+			Send {U+03B9}{U+2754}	;	ι❔
+			return
+
+		:*:;jinn::	
+			Send {U+A556}	;	ꕖ	
+			return
+
 			::;y::
 				Send {U+25BD}	;	▽	:	;wy?
 				return
@@ -396,15 +409,6 @@ SetTitleMatchMode, 2 ; Title can be part of the full title
 			Send +1{U+2C33}		; 	!ⰳ
 			return
 
-			::;disc:: 
-				Send {U+A66A}		;	Ꙫ	:	3.3	discover
-				return
-		:*:;archive::
-			Send +1{U+2C34}		;	!ⰴ
-			return
-		:*:;reference::	
-			Send {U+03B9}{U+2754}	;	ι❔
-			return
 
 
 	;//OFF CapsLock switches to last app
@@ -488,7 +492,8 @@ SetTitleMatchMode, 2 ; Title can be part of the full title
 				Send, %A_Hour%:%A_Min%	; timestamp
 				return
 		::;date:: ;// datestamp
-			Send, %A_MM%.%A_DD%-%A_DDD%	; date
+			Send,  %A_YYYY%.%A_MM%.%A_DD%	; date
+				; leaving out day of week: -%A_DDD%
 			return
 		::;etime::
 			Send {U+25D4}	;	◔	;	estimated time
