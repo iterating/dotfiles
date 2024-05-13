@@ -15,5 +15,5 @@
 	"save_on_focus_lost": false,
 	"show_full_path": false,
 	"theme": "Adaptive.sublime-theme",
-	"word_wrap": true
+	"word_wrap": true,
 }

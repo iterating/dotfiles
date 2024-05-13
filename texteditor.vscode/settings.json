@@ -1,232 +1,37 @@
 {
-"sync.gist": "70f4793b6dd66711b005b2ebac2825db",
-"workbench.preferredLightColorTheme": "GitHub Light",
-"zenMode.fullScreen": false,
-"window.autoDetectHighContrast": false,
-"workbench.activityBar.visible": true,
-"explorer.openEditors.visible": 0,
-"telemetry.enableTelemetry": false,
-"scm.diffDecorations": "minimap",
-"scm.diffDecorationsGutterVisibility": "hover",
-"explorer.confirmDelete": false,
-"diffEditor.renderIndicators": false,
-"workbench.tree.renderIndentGuides": "always",
-"workbench.editor.revealIfOpen": true,
-"window.menuBarVisibility": "default",
-"workbench.editor.centeredLayoutAutoResize": false,
-"workbench.startupEditor": "newUntitledFile",
-"sync.forceUpload": true,
-"extensions.ignoreRecommendations": false,
-"sync.autoUpload": false,
-"sync.quietSync": true,
-"sync.autoDownload": false,
-"breadcrumbs.symbolPath": "last",
-"workbench.editor.closeEmptyGroups": false,
-"workbench.editor.tabSizing": "shrink",
-"workbench.editor.closeOnFileDelete": true,
-"workbench.panel.opensMaximized": "never",
-"files.defaultLanguage": "markdown",
-"customizeUI.activityBar": "bottom",
-"customizeUI.titleBar": "inline",
-"customizeUI.activityBarHideSettings": true,
-"editor.mouseWheelZoom": true,
-"editor.foldingStrategy": "indentation",
-"editor.foldingHighlight": false,
-"editor.minimap.showSlider": "always",
-"editor.minimap.enabled": true,
-"editor.minimap.maxColumn": 30,
-"sync.removeExtensions": true,
-"scm.diffDecorationsGutterWidth": 1,
-"editor.glyphMargin": false,
-"scm.repositories.visible": 7,
-// Set this to false if you turn on quickSuggestions
-// but don't want suggestions for markdown related snippets
-// as you type:
-"editor.suggest.showSnippets": false,
-"editor.suggest.snippetsPreventQuickSuggestions": false,
-"terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
-"sync.syncExtensions": true,
-"markdown-preview-enhanced.mathRenderingOnlineService": "https://latex.codecogs.com/svg.latex",
-"editor.wordWrap": "wordWrapColumn",
-"editor.wordWrapColumn": 72,
-"editor.overviewRulerBorder": false,
-"editor.codeLens": false,
-"editor.parameterHints.enabled": false,
-"editor.renderFinalNewline": false,
-"editor.formatOnPaste": true,
-"editor.lineHeight": 32,
-"editor.fontFamily": "-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;",
-"files.autoSave": "onFocusChange",
-"markdownShortcuts.icons.bold": false,
-"markdownShortcuts.icons.italic": false,
-"markdownShortcuts.icons.bullets": false,
-"markdown-header-coloring.textDecoration": "",
-"markdown-header-coloring.backgroundColorOpacity": 0,
-"markdown-header-coloring.colormapConfig": {
-	"colormap": "hsv",
-	"nshades": 20
-},
-"scm.defaultViewMode": "tree",
-"scm.autoReveal": false,
-"window.title": "${dirty}${activeEditorShort}",
-"workbench.sideBar.location": "left",
-"pasteImage.defaultName": "${currentFileNameWithoutExt}-ms",
-"pasteImage.prefix": "./assets/",
-"pasteImage.path": "${currentFileDir}/assets/",
-"pasteImage.basePath": "${currentFileDir}/assets/",
-"customizeUI.fontSizeMap": {
-
-
-	"13px": "11px",
-	"12px": "11px",
-	"monospace": "15px",
-	"tab-title": "8px",
-},
-
-"customizeUI.stylesheet": {
-	
-	".monaco-workbench .part.editor>.content .editor-group-container>.title .tabs-container": "height: 18px !important;",
-
-	".monaco-workbench .part.editor > .content .editor-group-container > .title .tabs-container > .tab": "height: 18px !important;",
-	".monaco-workbench .part.editor > .content .editor-group-container>.title .tabs-container>.tab.sizing-shrink > .monaco-icon-label>.monaco-icon-label-container": "line-height: 18px !important",
-
-	".monaco-workbench .part.editor > .content .editor-group-container>.title .editor-actions": "height: 18px !important;",
-	".monaco-workbench .part.editor > .content .editor-group-container>.title .monaco-scrollable-element": "height: 18px !important;",
-	".monaco-workbench .part.editor > .content .editor-group-container>.title .editor-actions .action-label, .monaco-workbench .part.editor>.content .editor-group-container > .title .title-actions .action-label": "height: 18px !important;",
-		
-	".monaco-pane-view .pane>.pane-header h3.title": "font-weight: 100 !important; text-transform: lowercase; font-size: 12px;  font-family: calibri;",
-},
-
-"markdown-header-coloring.userDefinedHeaderColor": {
-	"enabled": true,
-	"Header_1": {
-		"color": "#F77B72",
-		"backgroundColor": "",
-		"textDecoration": "",
-		"overviewRulerColor": ""
-	},
-	"Header_2": {
-		"color": "#9E82C3",
-		"backgroundColor": "",
-		"textDecoration": "",
-		"overviewRulerColor": ""
-	},
-	"Header_3": {
-		"color": "#89B1DF",
-		"backgroundColor": "",
-		"textDecoration": "",
-		"overviewRulerColor": ""
-	},
-	"Header_4": {
-		"color": "#B2CD91",
-		"backgroundColor": "",
-		"textDecoration": "",
-		"overviewRulerColor": ""
-	},
-	"Header_5": {
-		"color": "#E6B8C8",
-		"backgroundColor": "",
-		"textDecoration": "",
-		"overviewRulerColor": ""
-	},
-	"Header_6": {
-		"color": "#EBD9B6",
-		"backgroundColor": "",
-		"textDecoration": "",
-		"overviewRulerColor": ""
-	}
-},
-"dendron.defaultScratchDateFormat": "y.MM.dd.HHmm",
-"markdown.preview.fontSize": 20,
-"markdown.preview.fontFamily": "Segoe UI",
-"markdown-preview-enhanced.automaticallyShowPreviewOfMarkdownBeingEdited": true,
-"todo-tree.general.tags": [
-	"FIXME",
-	"TODO",
-	"XXX",
-	"- [ ]",
-	"ɁɁ"
-],
-"dendron.defaultScratchName": "ιunsorted",
-"todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
-"workbench.statusBar.visible": false,
-"workbench.colorTheme": "GitHub Light",
-"diffEditor.wordWrap": "on",
-"markdown-preview-enhanced.imageFolderPath": "",
-"markdown-preview-enhanced.configPath": "C:/Users/jy/dotfiles/texteditor.vscode/markdown-preview-enhanced",
-"dendron.rootDir": ".",
-"kanban.time.dateformat": "MM.DD.HH:mm",
-"security.workspace.trust.untrustedFiles": "open",
-"dendron.defaultScratchAddBehavior": "childOfCurrent",
-"easy-highlight.highlightColor": "#d5ff00",
-"dendron.defaultTimestampDecorationFormat": "DATETIME_SHORT",
-"highlight.regexes": {
-	"((?:<!-- *)?(?:#|// @|//|./\\*+|<!--|--|\\* @|{!|{{!--|{{!) *TODO(?:\\s*\\([^)]+\\))?:?)((?!\\w)(?: *-->| *\\*/| *!}| *--}}| *}}|(?= *(?:[^:]//|/\\*+|<!--|@|--|{!|{{!--|{{!))|(?: +[^\\n@]*?)(?= *(?:[^:]//|/\\*+|<!--|@|--(?!>)|{!|{{!--|{{!))|(?: +[^@\\n]+)?))": {
-		"filterFileRegex": ".*(?<!CHANGELOG.md)$",
-		"decorations": [
-			{
-				"overviewRulerColor": "#ffcc00",
-				"backgroundColor": "#ffcc00",
-				"color": "#1f1f1f",
-				"fontWeight": "bold"
-			},
-			{
-				"backgroundColor": "#ffcc00",
-				"color": "#1f1f1f"
-			}
-		]
-	},
-	"((?:<!-- *)?(?:#|// @|//|./\\*+|<!--|--|\\* @|{!|{{!--|{{!) *(?:FIXME|FIX|BUG|UGLY|DEBUG|HACK)(?:\\s*\\([^)]+\\))?:?)((?!\\w)(?: *-->| *\\*/| *!}| *--}}| *}}|(?= *(?:[^:]//|/\\*+|<!--|@|--|{!|{{!--|{{!))|(?: +[^\\n@]*?)(?= *(?:[^:]//|/\\*+|<!--|@|--(?!>)|{!|{{!--|{{!))|(?: +[^@\\n]+)?))": {
-		"filterFileRegex": ".*(?<!CHANGELOG.md)$",
-		"decorations": [
-			{
-				"overviewRulerColor": "#cc0000",
-				"backgroundColor": "#cc0000",
-				"color": "#1f1f1f",
-				"fontWeight": "bold"
-			},
-			{
-				"backgroundColor": "#cc0000",
-				"color": "#1f1f1f"
-			}
-		]
-	},
-	"((?:<!-- *)?(?:#|// @|//|./\\*+|<!--|--|\\* @|{!|{{!--|{{!) *(?:REVIEW|OPTIMIZE|TSC)(?:\\s*\\([^)]+\\))?:?)((?!\\w)(?: *-->| *\\*/| *!}| *--}}| *}}|(?= *(?:[^:]//|/\\*+|<!--|@|--|{!|{{!--|{{!))|(?: +[^\\n@]*?)(?= *(?:[^:]//|/\\*+|<!--|@|--(?!>)|{!|{{!--|{{!))|(?: +[^@\\n]+)?))": {
-		"filterFileRegex": ".*(?<!CHANGELOG.md)$",
-		"decorations": [
-			{
-				"overviewRulerColor": "#00ccff",
-				"backgroundColor": "#00ccff",
-				"color": "#1f1f1f",
-				"fontWeight": "bold"
-			},
-			{
-				"backgroundColor": "#00ccff",
-				"color": "#1f1f1f"
-			}
-		]
-	},
-	"((?:<!-- *)?(?:#|// @|//|./\\*+|<!--|--|\\* @|{!|{{!--|{{!) *(?:IDEA)(?:\\s*\\([^)]+\\))?:?)((?!\\w)(?: *-->| *\\*/| *!}| *--}}| *}}|(?= *(?:[^:]//|/\\*+|<!--|@|--|{!|{{!--|{{!))|(?: +[^\\n@]*?)(?= *(?:[^:]//|/\\*+|<!--|@|--(?!>)|{!|{{!--|{{!))|(?: +[^@\\n]+)?))": {
-		"filterFileRegex": ".*(?<!CHANGELOG.md)$",
-		"decorations": [
-			{
-				"overviewRulerColor": "#cc00cc",
-				"backgroundColor": "#cc00cc",
-				"color": "#1f1f1f",
-				"fontWeight": "bold"
-			},
-			{
-				"backgroundColor": "#cc00cc",
-				"color": "#1f1f1f"
-			}
-		]
-	}
-},
-"update.showReleaseNotes": false,
-"cSpell.enabled": true,
-"editor.accessibilitySupport": "off",
-"window.titleBarStyle": "native",
-"markdown.math.enabled": false,
-
-
+    "workbench.startupEditor": "none",
+    "sync.gist": "5b94062e5439341633bf876bf1ff2dec",
+    "sync.quietSync": true,
+    "sync.autoDownload": true,
+    "sync.autoUpload": true,
+    "workbench.statusBar.visible": false,
+    "workbench.activityBar.location": "hidden",
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.minimap.maxColumn": 30,
+    "git.enableSmartCommit": true,
+    "vue.blocks": {},
+    "chatgpt.lang": "en",
+    "workbench.colorTheme": "GitHub Light",
+    "sync.forceUpload": false,
+    "editor.fontFamily": "-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;",
+    "workbench.settings.applyToAllProfiles": [
+        "editor.fontFamily",
+        "editor.wordWrap",
+        "editor.minimap.maxColumn",
+        "workbench.startupEditor",
+        "workbench.activityBar.location",
+        "workbench.colorTheme",
+        "workbench.statusBar.visible",
+        "sync.gist",
+        "sync.quietSync",
+        "sync.forceUpload",
+        "sync.autoUpload",
+        "sync.autoDownload",
+        "files.autoSave",
+        "editor.fontSize",
+        "editor.tabSize",
+        "editor.insertSpaces",
+        "editor.folding"
+    ],
+    "files.autoSave": "onFocusChange"
 }

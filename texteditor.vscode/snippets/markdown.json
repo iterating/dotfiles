@@ -12,7 +12,9 @@
 	// 	],
 	// 	"description": "Log output to console"
 	// }
-
+"line break": {
+	"body": "<br> "
+},
 // Folding
   "fold.selected": {
 	"body":

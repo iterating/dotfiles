@@ -12,17 +12,8 @@
         }
     },
 //
+
 // For Markdown
-    {
-        "key": "ctrl+shift+4",
-        "command": "editor.action.insertSnippet",
-        "when": "editorTextFocus",
-        "args": {
-            "langId": "markdown",
-            "name": "markdownFold"
-        }
-    },
-//
     {
         "key": "ctrl+shift+alt+up",
         "command": "editor.action.copyLinesUpAction",
@@ -141,10 +132,6 @@
         "key": "ctrl+k ctrl+l",
         "command": "-editor.toggleFold",
         "when": "editorTextFocus && foldingEnabled"
-    },
-    {
-        "key": "ctrl+`",
-        "command": "-workbench.action.terminal.toggleTerminal"
     },
     {
         "key": "ctrl+m",
@@ -516,7 +503,7 @@
         "when": "textInputFocus && !editorReadonly"
     },
     {
-        "key": "ctrl+shift+delete",
+        "key": "ctrl+shift+backspace",
         "command": "editor.action.deleteLines",
         "when": "textInputFocus && !editorReadonly"
     },
@@ -697,14 +684,6 @@
     {
         "key": "ctrl+r f5",
         "command": "dendron.updateSchema"
-    },
-    {
-        "key": "shift+delete",
-        "command": "dendron.deleteNode"
-    },
-    {
-        "key": "ctrl+shift+d",
-        "command": "-dendron.deleteNode"
     },
     {
         "key": "ctrl+-",
@@ -964,5 +943,37 @@
     {
         "key": "ctrl+shift+p",
         "command": "-workbench.action.showCommands"
+    },
+    {
+        "key": "ctrl+shift+d",
+        "command": "-dendron.delete",
+        "when": "dendron:pluginActive && shellExecutionSupported"
+    },
+    {
+        "key": "shift+alt+backspace",
+        "command": "dendron.delete"
+    },
+    {
+        "key": "ctrl+shift+backspace",
+        "command": "-search.searchEditor.action.deleteFileResults",
+        "when": "inSearchEditor"
+    },
+    {
+        "key": "ctrl+k t",
+        "command": "workbench.action.terminal.toggleTerminal",
+        "when": "terminal.active"
+    },
+    {
+        "key": "ctrl+`",
+        "command": "-workbench.action.terminal.toggleTerminal",
+        "when": "terminal.active"
+    },
+    {
+        "key": "ctrl+k c",
+        "command": "workbench.view.extension.chatgpt-activitybar"
+    },
+    {
+        "key": "shift+space",
+        "command": "chatgpt.askGPT"
     }
 ]

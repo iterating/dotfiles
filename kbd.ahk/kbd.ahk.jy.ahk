@@ -25,6 +25,15 @@ SetTitleMatchMode, 2 ; Title can be part of the full title
 			$+#k::Send {U+2193}	;	↓
 			$+#j::Send {U+2190}	;	←
 			$+#i::Send {U+2191}	;	↑
+; Shortcuts
+	::;addr::
+		Send, 130 E Sycamore Ave Arcadia CA 91006 ;	
+		return
+	::;em::
+		Send, jyoung0696@gmail.com ;	
+		
+		return
+	;//symbols.scientific
 			::;nl::
 				Send {U+219B}	;	↛	
 				return
@@ -110,8 +119,6 @@ SetTitleMatchMode, 2 ; Title can be part of the full title
 			::;=i:: 		; 	⇑ 
 				Send {U+21D1}
 				return
-
-
 		$+#;::Send {U+FF1A}	;	full width colon "："
 		$+#'::Send {U+2033}	;	Quote ″
 
@@ -261,9 +268,12 @@ SetTitleMatchMode, 2 ; Title can be part of the full title
 		::;e-::
 			Send e<sup>-</sup>	;	 electron
 			return
-	::;benzene::
-		Send {U+23E3}
-		return
+		::;benzene::
+			Send {U+23E3}
+			return
+		::;mu::
+			Send {U+03BC}	;	μ
+			return
 	;//⊞.anchors
 		::;top::
 			Send {U+2E17}	;	⸗	:	Top anchor
@@ -488,12 +498,14 @@ SetTitleMatchMode, 2 ; Title can be part of the full title
 		::;time:: 
 			Send, %A_Hour%:%A_Min%	; timestamp
 			return
-			::;t:: 
-				Send, %A_Hour%:%A_Min%	; timestamp
-				return
+
 		::;date:: ;// datestamp
 			Send,  %A_YYYY%.%A_MM%.%A_DD%	; date
 				; leaving out day of week: -%A_DDD%
+			return
+		::;datew:: ;// datestamp
+		Send,  %A_YYYY%.%A_MM%.W%A_YWeek% 	 ; date and week 
+			; leaving out day of week: -%A_DDD%
 			return
 		::;etime::
 			Send {U+25D4}	;	◔	;	estimated time
