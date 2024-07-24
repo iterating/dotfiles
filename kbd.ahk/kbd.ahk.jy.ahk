@@ -6,6 +6,12 @@ DetectHiddenWindows, On
 SetTitleMatchMode, 2 ; Title can be part of the full title
 
 ;// == GLOBAL OS LEVEL SHORTCUTS ==
+/* 
+^: Ctrl
+!: Alt
+#: Win
++: Shift
+*/
 	F13::Send #1 ; sharpkeys::quicklaunch ; CapsL→F13→quicklaunch.#1
 	+F13:: Send #2
 	#F13:: Send #3
